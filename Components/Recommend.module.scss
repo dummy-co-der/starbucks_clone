@@ -1,0 +1,36 @@
+@import './Color.scss';
+.container {
+  background-color: $bg-color;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding:10px;
+}
+
+.title {
+  color: $primary-color;
+  font-size: 2rem;
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  color: $secondary-color;
+  font-size: 2rem;
+  margin-top: 1.25rem;
+  margin-right: 2.5rem;
+}
+
+.image {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-top: 1.25rem;
+  margin-right: 1rem;
+  background-image: url('../public/leaf.svg');
+  background-size: contain;
+}
