@@ -1,11 +1,15 @@
 import Image from 'next/image'
-import logo from '../public/starbucks.png'
-import { Button, Modal,Input,Select,Space } from 'antd';
+import logo from '../../public/starbucks.png'
+import { Button, Modal,Input,Select,Space, Avatar } from 'antd';
 import { useState } from 'react';
-import styles from './Navigation.module.scss'
-import {SearchOutlined} from '@ant-design/icons'
+import styles from './Homepagestyle/Navigation.module.scss'
+import {SearchOutlined, UserOutlined} from '@ant-design/icons'
+import Form from 'antd/es/form/Form';
 
 export default function Navigation() {
+  const CloseButton = ({ onClick }) => (
+    <h5 style={{color:'#00754a'}}onClick={handleCancel}>Skip</h5>
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     console.log('Modal opened');
@@ -37,16 +41,32 @@ export default function Navigation() {
         <div class={styles.right}>
         <div class={styles.search}>
     <Space.Compact style={{ width: '100%' }}>
-      <Input defaultValue="Looking for Something Specific?" />
-      <Button type="primary"><SearchOutlined /></Button>
+      <Input placeholder="Looking for Something Specific?" />
+      <Button style={{backgroundColor:'#1e3933'}}><SearchOutlined style={{color:'white'}}/></Button>
     </Space.Compact>
+    
+</div>
+<div className={styles.user}>
+<Avatar style={{border:'2px solid #1e3933',backgroundColor:'white'}}size={35} icon={<UserOutlined style={{color:'#1e3933'}}/>} />
 </div>
 </div>
 </div>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+      <Modal title="LOGIN" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null} closeIcon={null}>
+       <Form>
+        <div className={styles.modal}>
+          <div className={styles.input}>
+            <h5>Username</h5>
+            <Input placeholder="Basic Input" />
+          </div>
+          <div className={styles.input}>
+          <h5>Username</h5>
+          <Input placeholder="Basic Input" />
+          </div>
+          <h5>Dont have an account ? <span>Lets Sign Up</span></h5>
+          <Button className={styles.buttons}>Login</Button>
+        </div>
+       
+       </Form>
       </Modal>
       </>
     )
