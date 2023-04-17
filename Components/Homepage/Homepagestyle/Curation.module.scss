@@ -1,0 +1,48 @@
+@import './Color.scss';
+.curations {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+    &__title {
+      // margin-left: 28px;
+      // padding-top: 4px;
+      color:$primary-color;
+    }
+    &_sub{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 80%;
+    }
+  
+    &__items {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+      justify-content: space-around;
+  
+      &__item {
+        padding: 6px;
+        cursor: pointer;
+  
+     
+  
+        &__itemimg {
+          border-radius: 50%;
+          cursor: pointer;
+          position: relative;
+          &:hover {
+            border:2px solid $primary-color;
+            transition: all 150ms ease-in-out;
+            position: relative;
+          }
+        
+        }
+        &__itemtitle {
+          text-align: center;
+        }
+      }
+    }
+  }
