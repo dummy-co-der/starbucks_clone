@@ -4,7 +4,7 @@ import { Button, Modal,Input,Select,Space, Avatar } from 'antd';
 import { useState } from 'react';
 import styles from './Homepagestyle/Navigation.module.scss'
 import {SearchOutlined, UserOutlined} from '@ant-design/icons'
-import Form from 'antd/es/form/Form';
+// import Form from 'antd/es/form/Form';
 
 export default function Navigation() {
   const CloseButton = ({ onClick }) => (
@@ -51,8 +51,8 @@ export default function Navigation() {
 </div>
 </div>
 </div>
-      <Modal title="LOGIN" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null} closeIcon={null}>
-       <Form>
+      <Modal className={styles.modals} title="LOGIN" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null} closeIcon={null}>
+       <form>
         <div className={styles.modal}>
           <div className={styles.input}>
             <h5>Username</h5>
@@ -66,7 +66,7 @@ export default function Navigation() {
           <Button className={styles.buttons}>Login</Button>
         </div>
        
-       </Form>
+       </form>
       </Modal>
       </>
     )

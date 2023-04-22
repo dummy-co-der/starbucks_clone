@@ -48,8 +48,18 @@
     align-items: center;
     // margin-left: 20px;
 }
+.modals{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .modal{
   display: flex;
+  width: 600px;
+  height:300px;
   flex-direction: column;
   align-items: center;
   justify-content: center;

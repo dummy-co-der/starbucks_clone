@@ -1,6 +1,6 @@
 @import './Color.scss';
 .container {
-  background-color: $bg-color;
+  
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -33,4 +33,9 @@
   margin-right: 1rem;
   background-image: url('../../../public/leaf.svg');
   background-size: contain;
+}
+.recommend{
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
 }
