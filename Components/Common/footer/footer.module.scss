@@ -1,0 +1,80 @@
+@import '../../Homepage/Homepagestyle/Color.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: $bg-color;
+}
+
+.footerContent {
+    width: 90%;
+    margin-bottom: 3rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footerUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.footerHeading {
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.boxlist {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: $bg-color;
+}
+
+.socialList {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.store {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerDown {
+    border-top: 1px solid $bg-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.legallist {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.item1 {
+    margin-top: 1rem;
+    padding-left: 15px;
+    padding-right: 17px;
+}
+
+.item2 {
+    margin-top: 1rem;
+}
+
+.link {
+    color: $bg-color;
+    text-decoration: none;
+}
