@@ -124,12 +124,12 @@ const Footer = () => {
                         <li className={styles.item1}>
                             <Link title='Terms of Use' href='/' className={styles.link}> Terms of Use </Link>
                         </li>
-                        <li className={styles.item1}>
+                        <li className={styles.item2}>
                             <Link title='Contact Us' href='/' className={styles.link}> Contact Us </Link>
                         </li>
                     </ul>
                     <ul className={styles.legallist}>
-                        <li className={styles.item2}>
+                        <li className={styles.item3}>
                             <Link title='Contact Us' href='/' className={styles.link}> © 2023 Starbucks Coffee Company. All rights reserved. </Link>
                         </li>
                     </ul>
