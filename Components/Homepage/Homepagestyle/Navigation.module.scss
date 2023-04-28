@@ -4,12 +4,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 10px;
 }
 
 .left {
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .right {
@@ -43,7 +44,13 @@
         font-weight: normal !important;
     }
 }
-
+.link{
+    text-decoration: none;
+    color:black;
+}
+.active {
+    border-bottom: 2px solid $secondary-color;
+  }
 .search {
     display: flex;
     align-items: center;

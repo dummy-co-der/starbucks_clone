@@ -1,18 +1,22 @@
-import Image from 'next/image'
-import logo from '../../public/starbucks.png'
-import { Button, Modal, Input, Select, Space, Avatar } from 'antd';
-import { useState } from 'react';
-import styles from './Homepagestyle/Navigation.module.scss'
-import { SearchOutlined, UserOutlined } from '@ant-design/icons'
+import Image from "next/image";
+import logo from "../../public/starbucks.png";
+import { Button, Modal, Input, Select, Space, Avatar } from "antd";
+import { useState } from "react";
+import styles from "./Homepagestyle/Navigation.module.scss";
+import { SearchOutlined, UserOutlined } from "@ant-design/icons";
+import Link from "next/link";
 // import Form from 'antd/es/form/Form';
 
 export default function Navigation() {
   const CloseButton = ({ onClick }) => (
-    <h5 style={{ color: '#00754a' }} onClick={handleCancel}>Skip</h5>
+    <h5 style={{ color: "#00754a" }} onClick={handleCancel}>
+      Skip
+    </h5>
   );
+  const [activeLink, setActiveLink] = useState('home');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
-    console.log('Modal opened');
+    console.log("Modal opened");
     setIsModalOpen(true);
   };
   const handleOk = () => {
@@ -26,32 +30,87 @@ export default function Navigation() {
       <div className={styles.navbarcontainer}>
         <div className={styles.left}>
           <div className={styles.logo}>
-            <Image src={logo} alt='logo' height={40} width={40} />
+            <Image src={logo} alt="logo" height={40} width={40} />
           </div>
           <div className={styles.optionflex}>
             <div className={styles.options}>
-              <div><h4>Home</h4></div>
-              <div><h4>Gift</h4></div>
-              <div><h4>Order</h4></div>
-              <div><h4 onClick={showModal}>Pay</h4></div>
-              <div><h4>Store</h4></div>
+              <Link
+                href="/home"
+                className={`${styles.link} ${
+                  activeLink === "home" ? styles.active : ""
+                }`}
+                onClick={() => setActiveLink("home")}
+              >
+                <div>
+                  <h4>Home</h4>
+                </div>
+              </Link>
+              <Link
+                href="/gift"
+                className={`${styles.link} ${
+                  activeLink === "gift" ? styles.active : ""
+                }`}
+                onClick={() => setActiveLink("gift")}
+              >
+                <div>
+                  <h4>Gift</h4>
+                </div>
+              </Link>
+              <Link
+                href="/order"
+                className={`${styles.link} ${
+                  activeLink === "order" ? styles.active : ""
+                }`}
+                onClick={() => setActiveLink("order")}
+              >
+                <div>
+                  <h4>Order</h4>
+                </div>
+              </Link>
+              <div>
+                <h4 onClick={showModal}>Pay</h4>
+              </div>
+              <Link
+                href="/store"
+                className={`${styles.link} ${
+                  activeLink === "store" ? styles.active : ""
+                }`}
+                onClick={() => setActiveLink("store")}
+              >
+                <div>
+                  <h4>Store</h4>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
         <div class={styles.right}>
           <div class={styles.search}>
-            <Space.Compact style={{ width: '100%' }}>
+            <Space.Compact style={{ width: "100%" }}>
               <Input placeholder="Looking for Something Specific?" />
-              <Button style={{ backgroundColor: '#1e3933' }}><SearchOutlined style={{ color: 'white' }} /></Button>
+              <Button style={{ backgroundColor: "#1e3933" }}>
+                <SearchOutlined style={{ color: "white" }} />
+              </Button>
             </Space.Compact>
-
           </div>
           <div className={styles.user}>
-            <Avatar style={{ border: '2px solid #1e3933', backgroundColor: 'white' }} size={35} icon={<UserOutlined style={{ color: '#1e3933' }} />} />
+            <Avatar
+              style={{ border: "2px solid #1e3933", backgroundColor: "white" }}
+              size={35}
+              icon={<UserOutlined style={{ color: "#1e3933" }} />}
+            />
           </div>
         </div>
       </div>
-      <Modal className={styles.modals} title="LOGIN" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} footer={null} closeIcon={null}>
+      <Modal
+        className={styles.modals}
+        title="LOGIN"
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        footer={null}
+        closeIcon={null}
+      >
         <form>
           <div className={styles.modal}>
             <div className={styles.input}>
@@ -62,14 +121,15 @@ export default function Navigation() {
               <h5>Username</h5>
               <Input placeholder="Basic Input" />
             </div>
-            <h5>Dont have an account ? <span>Lets Sign Up</span></h5>
+            <h5>
+              Dont have an account ? <span>Lets Sign Up</span>
+            </h5>
             <Button className={styles.buttons}>Login</Button>
           </div>
-
         </form>
       </Modal>
     </>
-  )
+  );
 }
 
 //   <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
