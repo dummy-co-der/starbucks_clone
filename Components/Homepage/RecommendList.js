@@ -3,8 +3,8 @@ import Card from '../Common/Card'
 const RecommendList = () => {
   return (
     <div>
-    <Card/>
-    RecommendList
+      <Card />
+      RecommendList
     </div>
   )
 }
