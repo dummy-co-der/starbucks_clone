@@ -1,12 +1,14 @@
 @import "./Color.scss";
-.banner{
-    display:flex;
-    flex-direction:row;
+
+.banner {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: $primary-color;
 }
-.bannersub{
-    width:60%;
+
+.bannersub {
+    width: 60%;
     color: $bg-color;
 }

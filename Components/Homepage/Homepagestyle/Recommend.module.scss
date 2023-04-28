@@ -1,10 +1,10 @@
 @import './Color.scss';
+
 .container {
-  
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding:10px;
+  padding: 10px;
 }
 
 .title {
@@ -34,7 +34,8 @@
   background-image: url('../../../public/leaf.svg');
   background-size: contain;
 }
-.recommend{
+
+.recommend {
   display: flex;
   flex-direction: column;
   background-color: $bg-color;

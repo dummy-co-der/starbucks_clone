@@ -1,82 +1,106 @@
-@import '../../Homepage/Homepagestyle/Color.scss';
-.navbarcontainer{
+@import './Color.scss';
+
+.navbarcontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.left{
+
+.left {
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.right{
+
+.right {
     display: flex;
     width: 30%;
     justify-content: space-evenly;
 }
 
-.logo{
-    padding:4px;
+.logo {
+    padding: 4px;
     display: flex;
     align-items: center;
 }
-.optionflex{
+
+.optionflex {
     display: flex;
     flex-direction: row;
-    width:80%;
+    width: 80%;
     justify-content: space-evenly;
     align-items: center;
 }
-.options{
+
+.options {
     display: flex;
     flex-direction: row;
-    width:100%;
+    width: 100%;
     cursor: pointer;
     justify-content: space-evenly;
-    h4{
-        font-weight: normal!important;
+
+    h4 {
+        font-weight: normal !important;
     }
 }
-.search{
-    display:flex;
+.link{
+    text-decoration: none;
+    color:black;
+    margin: 0px;
+    
+}
+.active {
+    text-decoration: underline $secondary-color 2px;
+    text-underline-position: under;
+    text-underline-offset: 4px;
+  }
+.search {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
 }
-.user{
+
+.user {
     display: flex;
     align-items: center;
     // margin-left: 20px;
 }
-.modals{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+.modals {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.modal{
-  display: flex;
-  width: 600px;
-  height:300px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  h5{
-    span{
-        color: $secondary-color;
+
+.modal {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h5 {
+        span {
+            color: $secondary-color;
+        }
     }
-  }
 }
-.input{
+
+.input {
     width: 100%;
 }
-.buttons{
+
+.buttons {
     width: 50%;
     background-color: $secondary-color;
     color: $bg-color;
 }
+
 //class="mb-3 xl:w-96"
 //class="input-group relative flex items-stretch w-full mb-4 flex-row"
 //"btn inline-block px-6 py-2.5 bg-[#1e3932] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center ml-10"

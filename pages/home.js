@@ -5,6 +5,7 @@ import Recommend from '@/Components/Homepage/Recommend'
 import Footer from '@/Components/Common/Footer'
 // import Footer from '@/Components/Common/footer/footer'
 import React from 'react'
+import DiscoverMore from '@/Components/Homepage/DiscoverMore'
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
     <Banner/>
     <Curation/>
     <Recommend/>
+    <DiscoverMore/>
     <Footer/>
     </>
   )
