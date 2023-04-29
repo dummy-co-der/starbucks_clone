@@ -8,9 +8,10 @@ function Banner() {
         <h2 className="">A world of rewards awaits you! Sign up now.</h2>
       </div>
       <Link href='/knowmore'>
-      <Button shape="round"  ghost className={`${styles.btnbanner} no-hover`} >
-        Know more
-      </Button>
+        {/* <Button shape="round"  ghost className={`${styles.btnbanner} no-hover`} > */}
+        <Button shape="round" ghost>
+          Know more
+        </Button>
       </Link>
     </div>
   )

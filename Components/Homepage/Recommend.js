@@ -1,7 +1,6 @@
-import Image from 'next/image';
 import styles from './Homepagestyle/Recommend.module.scss'
-import leaf from '../../public/leaf.svg';
-import RecommendList from './RecommendList';
+import RecommendList from './RecommendList'
+
 const Recommend = () => {
   return (
     <div className={styles.recommend}>
@@ -15,7 +14,7 @@ const Recommend = () => {
       </div>
       <RecommendList />
     </div>
-  );
-};
+  )
+}
 
-export default Recommend;
+export default Recommend

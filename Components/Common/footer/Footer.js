@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './Footer/Footer.module.scss'
+import styles from './Footer.module.scss'
 import Image from 'next/image'
-import logo from '../../public/starbucks.png'
-import ios from '../../public/appstoreiOS.png'
-import android from '../../public/appstoreAndroid.png'
+import logo from '../../../public/starbucks.png'
+import ios from '../../../public/appstoreiOS.png'
+import android from '../../../public/appstoreAndroid.png'
 import Link from 'next/link'
 import { InstagramOutlined, FacebookOutlined, TwitterOutlined } from '@ant-design/icons';
 

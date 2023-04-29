@@ -1,4 +1,4 @@
-@import "./Color.scss";
+@import "/Components/Color.scss";
 
 .banner {
     display: flex;
@@ -6,9 +6,11 @@
     justify-content: center;
     align-items: center;
     background-color: $primary-color;
+    margin-top:60px;
 }
 
 .bannersub {
     width: 60%;
     color: $bg-color;
 }
+
