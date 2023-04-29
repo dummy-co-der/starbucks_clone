@@ -1,0 +1,89 @@
+@import '../../Color.scss';
+
+.g_banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.g_content {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g_card {
+    position: relative;
+  top: 0;
+  left: 0;
+}
+
+.g_card_background {
+    position: relative;
+    width: 1116px;
+    height: 220px;
+    margin: 35px 0;
+    top: 0;
+  left: 0;
+}
+
+.g_card_background_left {
+    width: 95px;
+    height: 180px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+.g_card_content {
+    position: absolute;
+    top: 40px;
+    left: 140px;
+}
+
+.g_card_content button {
+    top: -45px;
+    left: 830px;
+    height: 32px;
+    width: 110px;
+    border-radius: 16px;
+    color: white;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+}
+
+.g_tab {
+    background-color: #f2f0eb;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.g_tab_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    cursor: pointer;
+}
+
+.tab_item1 {
+    padding-left: 95px;
+    padding-right: 35px;
+    border-right: 1px solid gray;
+}
+
+.tab_item2 {
+    padding-left: 35px;
+    padding-right: 35px;
+    border-right: 1px solid gray;
+}
+
+.tab_item3 {
+    padding-left: 35px;
+}
+
+.link {
+    color: gray;
+    text-decoration: none;
+}

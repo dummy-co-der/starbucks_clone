@@ -1,9 +1,16 @@
 import React from 'react'
+import Navigation from '@/Components/Common/Navigation/Navigation'
+import Banner from '@/Components/Giftpage/Banner'
+import Footer from '@/Components/Common/Footer/Footer'
 
-const gift = () => {
+const Giftpage = () => {
   return (
-    <div>gift</div>
+    <>
+      <Navigation />
+      <Banner />
+      <Footer />
+    </>
   )
 }
 
-export default gift
+export default Giftpage

@@ -1,10 +1,10 @@
-import Image from "next/image";
-import logo from "../../public/starbucks.png";
-import { Button, Modal, Input, Select, Space, Avatar } from "antd";
-import { useState } from "react";
-import styles from "./Homepagestyle/Navigation.module.scss";
-import { SearchOutlined, UserOutlined } from "@ant-design/icons";
-import Link from "next/link";
+import Image from 'next/image'
+import logo from '../../../public/starbucks.png'
+import { Button, Modal, Input, Select, Space, Avatar } from 'antd'
+import { useState } from 'react'
+import styles from './Navigation.module.scss'
+import { SearchOutlined, UserOutlined } from '@ant-design/icons'
+import Link from 'next/link'
 // import Form from 'antd/es/form/Form';
 
 export default function Navigation() {
@@ -36,9 +36,8 @@ export default function Navigation() {
             <div className={styles.options}>
               <Link
                 href="/home"
-                className={`${styles.link} ${
-                  activeLink === "home" ? styles.active : ""
-                }`}
+                className={`${styles.link} ${activeLink === "home" ? styles.active : ""
+                  }`}
                 onClick={() => setActiveLink("home")}
               >
                 <div>
@@ -47,9 +46,8 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/gift"
-                className={`${styles.link} ${
-                  activeLink === "gift" ? styles.active : ""
-                }`}
+                className={`${styles.link} ${activeLink === "gift" ? styles.active : ""
+                  }`}
                 onClick={() => setActiveLink("gift")}
               >
                 <div>
@@ -58,9 +56,8 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/order"
-                className={`${styles.link} ${
-                  activeLink === "order" ? styles.active : ""
-                }`}
+                className={`${styles.link} ${activeLink === "order" ? styles.active : ""
+                  }`}
                 onClick={() => setActiveLink("order")}
               >
                 <div>
@@ -72,9 +69,8 @@ export default function Navigation() {
               </div>
               <Link
                 href="/store"
-                className={`${styles.link} ${
-                  activeLink === "store" ? styles.active : ""
-                }`}
+                className={`${styles.link} ${activeLink === "store" ? styles.active : ""
+                  }`}
                 onClick={() => setActiveLink("store")}
               >
                 <div>
