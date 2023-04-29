@@ -1,7 +1,8 @@
 @import '/Components/Color.scss';
+
 .card {
     background-color: white;
-    width:35%;
+    width: 35%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,13 +11,13 @@
 }
 
 .cardsub {
-    width:90%;
+    width: 90%;
     height: 80%;
-   
+
 }
 
 .cardlayout {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
@@ -25,29 +26,35 @@
 .carddatalayout {
     margin-left: 12px;
 }
-.cardimage{
+
+.cardimage {
     border-radius: 12px;
 }
+
 .carddatasublayout {
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.cat{
-    width:13px;
-    height:13px;
+
+.cat {
+    width: 13px;
+    height: 13px;
 }
-.additembtn{
+
+.additembtn {
     background-color: $secondary-color;
     color: white;
     border-radius: 15px;
-    :hover{
+
+    :hover {
         color: aliceblue !important;
     }
 }
+
 .ant-btn:not(:disabled):hover {
     color: inherit;
     background-color: inherit;
     border-color: inherit;
-  }
+}

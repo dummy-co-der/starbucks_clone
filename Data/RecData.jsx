@@ -25,4 +25,4 @@ const RecData =
 
       },
    ]
-export default RecData;
+export default RecData

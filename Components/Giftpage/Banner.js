@@ -14,15 +14,13 @@ function Banner() {
             <div className={styles.g_content}>
                 <div className={styles.g_card}>
                     <Image src={Gbanner} alt="Gift's Banner" className={styles.g_card_background} />
-                    {/* <div> */}
-                        <Image src={Gbanner1} alt="Gift's Banner Left" className={styles.g_card_background_left} />
-                    {/* </div> */}
+                    <Image src={Gbanner1} alt="Gift's Banner Left" className={styles.g_card_background_left} />
                     <div className={styles.g_card_content}>
                         <p> Introducing </p>
                         <h3> Savannah Animals Mug </h3>
                         <p> Wander into the wilderness with every sip in this Savannah Animals Mug with giraffe head ornament on rim. </p>
                         <p> For </p>
-                        <p> ₹ 2190</p>
+                        <p> ₹ 2190 </p>
                         <Button> Order Now </Button>
                     </div>
                 </div>

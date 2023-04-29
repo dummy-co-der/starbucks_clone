@@ -36,8 +36,7 @@ export default function Navigation() {
             <div className={styles.options}>
               <Link
                 href="/home"
-                className={`${styles.link} ${activeLink === "home" ? styles.active : ""
-                  }`}
+                className={`${styles.link} ${activeLink === "home" ? styles.active : ""}`}
                 onClick={() => setActiveLink("home")}
               >
                 <div>
@@ -46,8 +45,7 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/gift"
-                className={`${styles.link} ${activeLink === "gift" ? styles.active : ""
-                  }`}
+                className={`${styles.link} ${activeLink === "gift" ? styles.active : ""}`}
                 onClick={() => setActiveLink("gift")}
               >
                 <div>
