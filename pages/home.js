@@ -5,6 +5,7 @@ import Navigation from '@/Components/Common/Navigation/Navigation'
 import Recommend from '@/Components/Homepage/Recommend'
 import Footer from '@/Components/Common/Footer/Footer'
 import DiscoverMore from '@/Components/Homepage/DiscoverMore'
+import SliderBanner from '@/Components/Homepage/SliderBanner'
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Navigation />
       <Banner />
       <Curation />
+      <SliderBanner/>
       <Recommend />
       <DiscoverMore />
       <Footer />

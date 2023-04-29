@@ -1,10 +1,12 @@
 @import '../../Color.scss';
-
 .g_banner {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
 }
-
+// .g_heading{
+//    background-color: white;
+// }
 .g_content {
     background-color: $primary-color;
     display: flex;
