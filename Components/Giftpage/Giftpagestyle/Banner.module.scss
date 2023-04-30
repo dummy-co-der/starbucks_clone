@@ -79,4 +79,17 @@
 .link {
     color: gray;
     text-decoration: none;
+    margin: 0;
+}
+
+.link:hover {
+    text-decoration: underline $secondary-color 2px;
+    text-underline-position: under;
+    text-underline-offset: 19px;
+}
+
+.active {
+    text-decoration: underline $secondary-color 2px;
+    text-underline-position: under;
+    text-underline-offset: 19px;
 }
