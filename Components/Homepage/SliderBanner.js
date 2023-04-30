@@ -4,32 +4,61 @@ import SliderBannerCard from '../Common/SliderBanner/SliderBannerCard'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import {DoubleRightOutlined} from '@ant-design/icons';
+import { DoubleRightOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
+import style from './Homepagestyle/SliderBanner.module.scss'
 const SliderBanner = () => {
-    const sliderSettings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: <button><DoubleRightOutlined color="green"/></button>,//className={style.sliderbtnprev}
-        nextArrow: <button></button> // className={style.sliderbtnnext}
-      };
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 250,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ],
+    prevArrow: <Button> <DoubleRightOutlined/></Button>,
+    nextArrow: <button ></button>
+  };
       const sliderItems = SliderBannerData.map((data, index) => (
         <div key={index}>
-          <div style={{width:'100%'}}>
+          <div className={style.sliderbanner}>
           <SliderBannerCard data={data} />
           </div>
         </div>
       ));
+
   return (
-    <div style={{width:"100%",margin:"auto", borderRadius:"15px"}}>
-        <div style={{maxWidth:'80rem',margin:"auto",overflow:'hidden'}}>
-        <Slider {...sliderSettings}>
-        {sliderItems}
-        </Slider>
-        </div>
-    </div>
+    <div className={style.sliderbannercard}>
+    <div className={style.sliders}>
+    <Slider {...sliderSettings}>
+      {sliderItems}
+    </Slider>
+  </div>
+  </div>
   )
 }
 
