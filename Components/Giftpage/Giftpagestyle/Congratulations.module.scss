@@ -1,24 +1,24 @@
 @import '../../Color.scss';
 
-.featured {
+.congratulations {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.featured_heading {
+.congratulations_heading {
     width: 100%;
     border-bottom: 1px solid gray;
 }
 
-.featured_heading h2 {
+.congratulations_heading h2 {
     margin-left: 10%;
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
 }
 
-.featured_content {
+.congratulations_content {
     display: flex;
     justify-content: space-between;
     flex-direction: row;

@@ -20,7 +20,7 @@ const RecData =
          image: '/product3.jpg',
          vegan: 'yes',
          title: 'Java Chip Frappuccino',
-         serving: 'PER SERVE(354 ml) - 367.50 Kcal',
+         serving: 'PER SERVE(35 ml) - 367.50 Kcal',
          price: '367.50',
 
       },

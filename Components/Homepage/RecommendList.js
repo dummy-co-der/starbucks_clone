@@ -4,7 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Card from '../Common/Card/Card';
 import RecData from '@/Data/RecData';
-import style from "./Homepagestyle/RecommendList.module.scss";
+import styles from "./Homepagestyle/RecommendList.module.scss";
+
 const RecommendList = () => {
   const sliderSettings = {
     dots: false,
@@ -38,8 +39,8 @@ const RecommendList = () => {
         }
       }
     ],
-    prevArrow: <button className={style.sliderbtnprev}></button>,
-    nextArrow: <button className={style.sliderbtnnext}></button>
+    prevArrow: <button className={styles.sliderbtnprev}></button>,
+    nextArrow: <button className={styles.sliderbtnnext}></button>
   };
 
   const sliderItems = RecData.map((data, index) => (
@@ -49,12 +50,12 @@ const RecommendList = () => {
   ));
 
   return (
-    <div className={style.recommendList}>
+    <div className={styles.recommendList}>
       <Slider {...sliderSettings}>
         {sliderItems}
       </Slider>
     </div>
-  );
-};
+  )
+}
 
-export default RecommendList;
+export default RecommendList

@@ -6,6 +6,7 @@ import CoffeeatHome from '../../public/Coffee At Home.jpg'
 import ReadytoEat from '../../public/Ready to Eat.jpg'
 import Image from 'next/image'
 import style from './Homepagestyle/Curation.module.scss'
+
 export const Curation = () => {
   return (
     <div class={style.curations}>

@@ -30,8 +30,6 @@
       padding: 6px;
       cursor: pointer;
 
-
-
       &__itemimg {
         border-radius: 50%;
         cursor: pointer;
@@ -39,8 +37,6 @@
 
         &:hover {
           border: 2px solid $primary-color;
-          transition: all 150ms ease-in-out;
-          position: relative;
         }
 
       }

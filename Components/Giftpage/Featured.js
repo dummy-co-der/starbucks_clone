@@ -7,11 +7,7 @@ const Featured = () => {
             <div className={styles.featured_heading}>
                 <h2> Anytime </h2>
             </div>
-            <div className={styles.featured_content}>
-                <div className={styles.featured_card}>
-
-                </div>
-            </div>
+            <div className={styles.featured_content} />
             <FeaturedList />
         </div>
     )

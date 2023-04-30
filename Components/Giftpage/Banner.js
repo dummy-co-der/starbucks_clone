@@ -1,7 +1,6 @@
 import styles from './Giftpagestyle/Banner.module.scss'
 import Image from 'next/image'
 import Gbanner from '../../public/gift-banner.png'
-import Gbanner1 from '../../public/gift-banner1.png'
 import { Button } from 'antd';
 import Link from 'next/link'
 
@@ -14,7 +13,6 @@ function Banner() {
             <div className={styles.g_content}>
                 <div className={styles.g_card}>
                     <Image src={Gbanner} alt="Gift's Banner" className={styles.g_card_background} />
-                    <Image src={Gbanner1} alt="Gift's Banner Left" className={styles.g_card_background_left} />
                     <div className={styles.g_card_content}>
                         <p> Introducing </p>
                         <h3> Savannah Animals Mug </h3>
