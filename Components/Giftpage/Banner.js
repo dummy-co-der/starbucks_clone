@@ -3,15 +3,17 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Gbanner from '../../public/gift-banner.png'
 import { Button } from 'antd';
-// import Featured from '@/Components/Giftpage/Featured'
+import Featured from '@/Components/Giftpage/Featured'
 import Anytime from '@/Components/Giftpage/Anytime'
 import Congratulations from '@/Components/Giftpage/Congratulations'
 import Thankyou from '@/Components/Giftpage/Thankyou'
 
 function Banner() {
-    const [activeLink, setActiveLink] = useState(0);
+    const [activeLink, setActiveLink] = useState('featured');
     function Choose() {
-        if (activeLink === 'anytime')
+        if (activeLink === 'featured')
+            return <Featured />
+        else if (activeLink === 'anytime')
             return <Anytime />
         else if (activeLink === 'congratulations')
             return <Congratulations />

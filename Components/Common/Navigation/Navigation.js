@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import logo from '../../../public/starbucks.png'
-import { Button, Modal, Input, Select, Space, Avatar } from 'antd'
-import { useEffect, useState } from 'react'
+import { Button, Modal, Input, Space, Avatar } from 'antd'
+import { useState } from 'react'
 import styles from './Navigation.module.scss'
 import { SearchOutlined, UserOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-// import Form from 'antd/es/form/Form';
+
 export default function Navigation() {
   const CloseButton = ({ onClick }) => (
     <h5 style={{ color: "#00754a" }} onClick={handleCancel}>
@@ -79,8 +79,8 @@ export default function Navigation() {
             </div>
           </div>
         </div>
-        <div class={styles.right}>
-          <div class={styles.search}>
+        <div className={styles.right}>
+          <div className={styles.search}>
             <Space.Compact style={{ width: "100%" }}>
               <Input placeholder="Looking for Something Specific?" />
               <Button style={{ backgroundColor: "#1e3933" }}>

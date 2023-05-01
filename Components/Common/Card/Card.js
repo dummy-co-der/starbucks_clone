@@ -4,7 +4,7 @@ import { Button, Typography } from 'antd';
 
 const Card = ({ data }) => {
   const { Paragraph } = Typography;
-  console.log(data.image)
+  // console.log(data.image)
   return (
     <div className={styles.card}>
       <div className={styles.cardsub}>

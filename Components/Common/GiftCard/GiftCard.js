@@ -4,7 +4,7 @@ import { Button } from 'antd';
 
 const GiftCard = ({ data }) => {
 
-    console.log(data.image)
+    // console.log(data.image)
     return (
         <div className={styles.card}>
             <div className={styles.cardsub}>
