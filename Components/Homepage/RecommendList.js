@@ -2,8 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Card from '../Common/Card/Card';
-import RecData from '@/Data/RecData';
+import Card from '../Common/Itemcard/ItemCard';
+import recommenddata from '@/Data/RecommendData';
 import styles from "./Homepagestyle/RecommendList.module.scss";
 
 const RecommendList = () => {
@@ -43,7 +43,7 @@ const RecommendList = () => {
     nextArrow: <button className={styles.sliderbtnnext}></button>
   };
 
-  const sliderItems = RecData.map((data, index) => (
+  const sliderItems = recommenddata.map((data, index) => (
     <div key={index}>
       <Card data={data} />
     </div>

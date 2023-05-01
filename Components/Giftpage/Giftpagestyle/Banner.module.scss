@@ -84,6 +84,7 @@
 
 .link:hover {
     text-decoration: underline $secondary-color 2px;
+    transition: text-decoration 0.25s ease-in-out;
     text-underline-position: under;
     text-underline-offset: 19px;
 }

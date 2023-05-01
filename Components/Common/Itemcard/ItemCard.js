@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Card.module.scss'
+import styles from './Itemcard.module.scss'
 import { Button, Typography } from 'antd';
 
 const Card = ({ data }) => {
@@ -11,7 +11,7 @@ const Card = ({ data }) => {
         <div className={styles.cardlayout}>
           <img src={data.image} alt="image" width={100} height={100} className={styles.cardimage} />
           <div className={styles.carddatalayout}>
-            <img src={(data.vegan == 'yes') ? '/veg.jpg' : '/nonveg.jpg'} alt='category' className={styles.cat} />
+            <img src={(data.vegan == 'yes') ? '/Recommends/veg.jpg' : '/Recommends/nonveg.jpg'} alt='category' className={styles.cat} />
             <Typography.Title level={5}>{data.title}</Typography.Title>
             <Paragraph>{data.serving}</Paragraph>
           </div>

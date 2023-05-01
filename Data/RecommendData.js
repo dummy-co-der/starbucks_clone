@@ -1,7 +1,7 @@
-const RecData =
+const recommenddata =
    [
       {
-         image: '/product1.jpg',
+         image: 'Recommends/product1.jpg',
          vegan: 'no',
          title: 'Hazlenut Triange',
          serving: 'PER SERVE(50 g) - 302 Kcal',
@@ -9,7 +9,7 @@ const RecData =
 
       },
       {
-         image: '/product2.jpg',
+         image: 'Recommends/product2.jpg',
          vegan: 'no',
          title: 'Bhuna Chicken Puff',
          serving: 'PER SERVE(85 g) - 390 Kcal',
@@ -17,7 +17,7 @@ const RecData =
 
       },
       {
-         image: '/product3.jpg',
+         image: 'Recommends/product3.jpg',
          vegan: 'yes',
          title: 'Java Chip Frappuccino',
          serving: 'PER SERVE(35 ml) - 367.50 Kcal',
@@ -25,7 +25,7 @@ const RecData =
 
       },
       {
-         image: '/product2.jpg',
+         image: 'Recommends/product2.jpg',
          vegan: 'no',
          title: 'Bhuna Chicken Puff',
          serving: 'PER SERVE(85 g) - 390 Kcal',
@@ -33,7 +33,7 @@ const RecData =
 
       },
       {
-         image: '/product3.jpg',
+         image: 'Recommends/product3.jpg',
          vegan: 'yes',
          title: 'Java Chip Frappuccino',
          serving: 'PER SERVE(354 ml) - 367.50 Kcal',
@@ -41,7 +41,7 @@ const RecData =
 
       },
       {
-         image: '/product2.jpg',
+         image: 'Recommends/product2.jpg',
          vegan: 'no',
          title: 'Bhuna Chicken Puff',
          serving: 'PER SERVE(85 g) - 390 Kcal',
@@ -49,7 +49,7 @@ const RecData =
 
       },
       {
-         image: '/product3.jpg',
+         image: 'Recommends/product3.jpg',
          vegan: 'yes',
          title: 'Java Chip Frappuccino',
          serving: 'PER SERVE(354 ml) - 367.50 Kcal',
@@ -57,4 +57,4 @@ const RecData =
 
       },
    ]
-export default RecData
+export default recommenddata

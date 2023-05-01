@@ -2,19 +2,19 @@ import Image from 'next/image'
 import logo from '../../../public/starbucks.png'
 import { Button, Modal, Input, Space, Avatar } from 'antd'
 import { useState } from 'react'
-import styles from './Navigation.module.scss'
+import styles from './Navbar.module.scss'
 import { SearchOutlined, UserOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export default function Navigation() {
+export default function Navbar() {
   const CloseButton = ({ onClick }) => (
     <h5 style={{ color: "#00754a" }} onClick={handleCancel}>
       Skip
     </h5>
   );
   const router = useRouter();
-  const activeLink = router.asPath.split('/')[1];
+  const activeLink = (router.asPath.split('/')[1]!='')?router.asPath.split('/')[1]:'home';
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     console.log("Modal opened");
