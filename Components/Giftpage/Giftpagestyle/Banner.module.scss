@@ -8,41 +8,36 @@
 
 .g_content {
     background-color: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .g_card {
     position: relative;
-    top: 0;
-    left: 0;
 }
 
 .g_card_background {
-    position: relative;
-    width: 1116px;
-    height: 220px;
-    margin: 35px 0;
-    top: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 80%;
+    padding: 2rem 0;
 }
 
 .g_card_content {
     position: absolute;
-    top: 40px;
-    left: 140px;
+    top: 15%;
+    left: 20%;
 }
 
-.g_card_content button {
-    top: -45px;
-    left: 830px;
-    height: 32px;
-    width: 110px;
+.bannerButton {
+    position: absolute;
+    top: 75%;
+    left: 83%;
     border-radius: 16px;
     color: white;
-    background-color: $secondary-color;
-    border-color: $secondary-color;
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
 }
 
 .g_tab {

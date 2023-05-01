@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Homepagestyle/DiscoverMore.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-import Discover from '../../public/Discover.jpg'
+import Discover from '../../public/Discover-images/Discover.jpg'
 import { Button } from 'antd';
 
 
