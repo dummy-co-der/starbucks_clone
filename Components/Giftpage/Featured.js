@@ -1,5 +1,7 @@
 import styles from './Giftpagestyle/Featured.module.scss'
+import AnytimeList from './AnytimeList'
 import FeaturedList from './FeaturedList'
+import CongratulationsList from './CongratulationsList'
 
 const Featured = () => {
     return (
@@ -7,12 +9,13 @@ const Featured = () => {
             <div className={styles.featured_heading}>
                 <h2> Anytime </h2>
             </div>
-            <div className={styles.featured_content}>
-                <div className={styles.featured_card}>
-
-                </div>
+            <div className={styles.featured_content} />
+                <FeaturedList />
+            <div className={styles.featured_heading}>
+                <h2> Congratulations </h2>
             </div>
-            <FeaturedList />
+            <div className={styles.featured_content} />
+            <CongratulationsList />
         </div>
     )
 }

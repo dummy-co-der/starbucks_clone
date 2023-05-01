@@ -1,11 +1,25 @@
 import styles from './Giftpagestyle/Banner.module.scss'
+import { useState } from 'react'
 import Image from 'next/image'
 import Gbanner from '../../public/gift-banner.png'
-import Gbanner1 from '../../public/gift-banner1.png'
 import { Button } from 'antd';
-import Link from 'next/link'
+import Featured from '@/Components/Giftpage/Featured'
+import Anytime from '@/Components/Giftpage/Anytime'
+import Congratulations from '@/Components/Giftpage/Congratulations'
+import Thankyou from '@/Components/Giftpage/Thankyou'
 
 function Banner() {
+    const [activeLink, setActiveLink] = useState('featured');
+    function Choose() {
+        if (activeLink === 'featured')
+            return <Featured />
+        else if (activeLink === 'anytime')
+            return <Anytime />
+        else if (activeLink === 'congratulations')
+            return <Congratulations />
+        else if (activeLink === 'thankyou')
+            return <Thankyou />
+    }
     return (
         <div className={styles.g_banner}>
             <div className={styles.g_heading}>
@@ -14,7 +28,6 @@ function Banner() {
             <div className={styles.g_content}>
                 <div className={styles.g_card}>
                     <Image src={Gbanner} alt="Gift's Banner" className={styles.g_card_background} />
-                    <Image src={Gbanner1} alt="Gift's Banner Left" className={styles.g_card_background_left} />
                     <div className={styles.g_card_content}>
                         <p> Introducing </p>
                         <h3> Savannah Animals Mug </h3>
@@ -28,19 +41,40 @@ function Banner() {
             <div className={styles.g_tab}>
                 <ul className={styles.g_tab_list}>
                     <li className={styles.tab_item1}>
-                        <Link title='Featured' href='/' className={styles.link}> FEATURED </Link>
+                        <div title='Featured'
+                            className={`${styles.link} ${activeLink === "featured" ? styles.active : ""}`}
+                            onClick={() => setActiveLink("featured")}
+                        >
+                            FEATURED
+                        </div>
                     </li>
                     <li className={styles.tab_item2}>
-                        <Link title='Anytime' href='/' className={styles.link}> ANYTIME </Link>
+                        <div title='Anytime'
+                            className={`${styles.link} ${activeLink === "anytime" ? styles.active : ""}`}
+                            onClick={() => setActiveLink("anytime")}
+                        >
+                            ANYTIME
+                        </div>
                     </li>
                     <li className={styles.tab_item2}>
-                        <Link title='Congratulations' href='/' className={styles.link}> CONGRATULATIONS </Link>
+                        <div title='Congratulations'
+                            className={`${styles.link} ${activeLink === "congratulations" ? styles.active : ""}`}
+                            onClick={() => setActiveLink("congratulations")}
+                        >
+                            CONGRATULATIONS
+                        </div>
                     </li>
                     <li className={styles.tab_item3}>
-                        <Link title='Thank You' href='/' className={styles.link}> THANK YOU </Link>
+                        <div title='ThankYou'
+                            className={`${styles.link} ${activeLink === "thankyou" ? styles.active : ""}`}
+                            onClick={() => setActiveLink("thankyou")}
+                        >
+                            THANK YOU
+                        </div>
                     </li>
                 </ul>
             </div>
+            <Choose />
         </div>
     )
 }

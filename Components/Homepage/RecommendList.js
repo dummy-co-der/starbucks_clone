@@ -2,9 +2,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Card from '../Common/Card/Card';
-import RecData from '@/Data/RecData';
-import style from "./Homepagestyle/RecommendList.module.scss";
+import Card from '../Common/Itemcard/ItemCard';
+import recommenddata from '@/Data/RecommendData';
+import styles from "./Homepagestyle/RecommendList.module.scss";
+
 const RecommendList = () => {
   const sliderSettings = {
     dots: false,
@@ -16,7 +17,7 @@ const RecommendList = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: false
@@ -38,23 +39,23 @@ const RecommendList = () => {
         }
       }
     ],
-    prevArrow: <button className={style.sliderbtnprev}></button>,
-    nextArrow: <button className={style.sliderbtnnext}></button>
+    prevArrow: <button className={styles.sliderbtnprev}></button>,
+    nextArrow: <button className={styles.sliderbtnnext}></button>
   };
 
-  const sliderItems = RecData.map((data, index) => (
+  const sliderItems = recommenddata.map((data, index) => (
     <div key={index}>
       <Card data={data} />
     </div>
   ));
 
   return (
-    <div className={style.recommendList}>
+    <div className={styles.recommendList}>
       <Slider {...sliderSettings}>
         {sliderItems}
       </Slider>
     </div>
-  );
-};
+  )
+}
 
-export default RecommendList;
+export default RecommendList

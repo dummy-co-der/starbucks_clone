@@ -1,16 +1,14 @@
 import React from 'react'
 import GiftCard from '../Common/GiftCard/GiftCard'
-import AnyTimeData from '@/Data/AnyTimeData'
+import CongratulationsData from '@/Data/CongratulationsData'
 import styles from '../Giftpage/Giftpagestyle/CongratulationsList.module.scss'
 
-const FeaturedList = () => {
+const CongratulationsList = () => {
     return (
         <div className={styles.Congratulations_List}>
-            <GiftCard data={AnyTimeData[0]} />
-            <GiftCard data={AnyTimeData[1]} />
-            <GiftCard data={AnyTimeData[2]} />
+            <GiftCard data={CongratulationsData[0]} />
         </div>
     )
 }
 
-export default FeaturedList
+export default CongratulationsList

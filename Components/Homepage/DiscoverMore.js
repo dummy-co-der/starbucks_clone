@@ -13,7 +13,7 @@ const DiscoverMore = () => {
                 <div className={styles.discoverHeading}>
                     <ul className={styles.discoverlist}>
                         <li className={styles.left}>
-                            <h2 style={{ color: '#5c5957' }}> Learn more about the world of coffee! </h2>
+                            <h2 style={{ color: '#1e3933' }}> Learn more about the world of coffee! </h2>
                         </li>
                     </ul>
                     <ul className={styles.discoverlist}>

@@ -1,6 +1,37 @@
+@import '../../Color.scss';
 .sliderBannerCard{
-    width:100%;
-    height:200px;
     margin: 10px;
     border-radius: 15px;
+    display: flex;
+    color: white;
+    width: 100%;
+}
+.imagebox{
+  width: 12%;
+  align-self: center;
+  flex: 0 0 auto;
+}
+.images{
+    width: 80%;
+}
+.bottomdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+}
+.datadiv{
+    width: 80%;
+}
+.bannerbtn{
+    border-radius: 20px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary-color;
+    color: $text-color;
+    font-weight: 700;
 }
