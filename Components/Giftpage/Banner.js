@@ -1,7 +1,7 @@
 import styles from './Giftpagestyle/Banner.module.scss'
 import { useState } from 'react'
 import Image from 'next/image'
-import Gbanner from '../../public/gift-banner.png'
+import Gbanner from '../../public/Gift-images/gift-banner.png'
 import { Button } from 'antd';
 import Featured from '@/Components/Giftpage/Featured'
 import Anytime from '@/Components/Giftpage/Anytime'
@@ -34,7 +34,7 @@ function Banner() {
                         <p> Wander into the wilderness with every sip in this Savannah Animals Mug with giraffe head ornament on rim. </p>
                         <p> For </p>
                         <p> ₹ 2190 </p>
-                        <Button> Order Now </Button>
+                        <Button className={styles.bannerButton}> Order Now </Button>
                     </div>
                 </div>
             </div>

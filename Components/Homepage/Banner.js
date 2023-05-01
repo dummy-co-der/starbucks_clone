@@ -7,7 +7,7 @@ function Banner() {
       <div className={styles.bannersub}>
         <h2 className="">A world of rewards awaits you! Sign up now.</h2>
       </div>
-      <Link href='/knowmore'>
+      <Link href='/rewards'>
         {/* <Button shape="round"  ghost className={`${styles.btnbanner} no-hover`} > */}
         <Button shape="round" ghost>
           Know more

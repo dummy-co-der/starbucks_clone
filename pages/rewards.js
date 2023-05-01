@@ -1,8 +1,8 @@
 import React from 'react'
-import Banner from '@/Components/Giftpage/Banner'
+import Banner from '@/Components/Rewardspage/Banner'
 import Layout from './Layout'
 
-const Giftpage = () => {
+const Rewardspage = () => {
   return (
     <>
       <Layout>
@@ -12,4 +12,4 @@ const Giftpage = () => {
   )
 }
 
-export default Giftpage
+export default Rewardspage
