@@ -49,7 +49,7 @@
 .r_card_contentsub {
     position: absolute;
     top: 20%;
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,8 +64,16 @@
 }
 
 // .rContentleft {}
-// .rContentright {}
-// .r_largestar {}
+
+.rContentright {
+    display: flex;
+    justify-content: right;
+
+}
+.r_largestar {
+    height: 30%;
+    width: 55%;
+}
 
 .r_logo {
     height: 13%;

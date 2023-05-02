@@ -34,6 +34,10 @@
     margin-top: 0;
     margin-bottom: 1rem;
     color: $bg-color;
+
+    :hover {
+        color: gray;
+    }
 }
 
 .socialList {
@@ -62,6 +66,10 @@
     flex-wrap: wrap;
     list-style: none;
     margin-bottom: 1rem;
+
+    :hover{
+        color: gray;
+    }
 }
 
 .item1 {

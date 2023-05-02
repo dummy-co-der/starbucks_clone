@@ -90,7 +90,7 @@ export default function Navbar() {
           </div>
           <div className={styles.user}>
             <Avatar
-              style={{ border: "2px solid #1e3933", backgroundColor: "white" }}
+              style={{ border: "2px solid #1e3933", backgroundColor: "white", cursor: 'pointer' }}
               size={35}
               icon={<UserOutlined style={{ color: "#1e3933" }} />}
             />
