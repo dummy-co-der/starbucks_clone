@@ -1,13 +1,13 @@
-import styles from './Giftpagestyle/Congratulations.module.scss'
+import styles from './Giftpagestyle/Anytime.module.scss'
 import CongratulationsList from './CongratulationsList'
 
 const Congratulations = () => {
     return (
-        <div className={styles.congratulations}>
-            <div className={styles.congratulations_heading}>
+        <div className={styles.anytime}>
+            <div className={styles.anytime_heading}>
                 <h2> Congratulations </h2>
             </div>
-            <div className={styles.congratulations_content} />
+            <div className={styles.anytime_content} />
             <CongratulationsList />
         </div>
     )

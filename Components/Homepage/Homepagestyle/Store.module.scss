@@ -1,0 +1,57 @@
+@import "/Components/Color.scss";
+
+.store {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.storeContent {
+    width: 80%;
+    margin-bottom: 3rem !important;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+}
+
+.storeHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.storelist {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.right {
+    margin-top: 1rem;
+}
+
+
+.rightlink {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+.cardStyling {
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+}
+
+.additembtn {
+    background-color: $secondary-color;
+    color: white;
+    border-radius: 15px;
+    margin-top: 2rem;
+    width: 120px;
+    font-weight: 600;
+
+    :hover {
+        color: white !important;
+    }
+}
