@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Itemcard.module.scss'
 import { Button, Typography } from 'antd';
 
-const Card = ({ data }) => {
+const ItemCard = ({ data }) => {
   const { Paragraph } = Typography;
   // console.log(data.image)
   return (
@@ -14,6 +14,7 @@ const Card = ({ data }) => {
             <img src={(data.vegan == 'yes') ? '/Recommends/veg.jpg' : '/Recommends/nonveg.jpg'} alt='category' className={styles.cat} />
             <Typography.Title level={5}>{data.title}</Typography.Title>
             <Paragraph>{data.serving}</Paragraph>
+            {data.description&&<Paragraph>{data.description}</Paragraph>}
           </div>
         </div>
 
@@ -26,4 +27,4 @@ const Card = ({ data }) => {
   )
 }
 
-export default Card
+export default ItemCard

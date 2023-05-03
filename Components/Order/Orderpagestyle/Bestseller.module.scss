@@ -1,0 +1,26 @@
+@import '../../Color.scss';
+.bestseller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bestsellersub{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+} 
+.orderpagedata{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.card {
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+    border-radius: 12px;
+    width: 30%;
+    margin: 8px;
+    &:hover {
+      box-shadow: 0 4px 8px #00000024, 0 8px 10px #0000001f, 0 1px 10px #0000003a, 0 16px 24px -16px rgba(0, 0, 0, 0.8);
+    }
+  }
