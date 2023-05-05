@@ -1,0 +1,25 @@
+@import "/Components/Color.scss";
+
+.cardStyling {
+    width: 500px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+}
+
+.additembtn {
+    background-color: $secondary-color;
+    color: white;
+    border-radius: 15px;
+    margin-top: 1rem;
+    width: 120px;
+    font-weight: 600;
+
+    :hover {
+        color: white !important;
+    }
+}
+
+.link {
+    color: $bg-color;
+    text-decoration: none;
+}

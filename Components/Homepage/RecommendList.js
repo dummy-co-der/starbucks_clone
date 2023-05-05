@@ -45,7 +45,7 @@ const RecommendList = () => {
 
   const sliderItems = recommenddata.map((data, index) => (
     <div key={index}>
-      <Card data={data} />
+      <Card data={data} border='12px'/>
     </div>
   ));
 

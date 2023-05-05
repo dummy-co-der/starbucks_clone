@@ -16,10 +16,11 @@ const Footer = () => {
                         <Image src={logo} alt='logo' height={62} width={62} />
                     </div>
                     <div className={styles.aboutus}>
-                        <h3 className={styles.footerHeading}> About Us </h3>
+                        <h3 className={styles.footerHeading}>
+                            <Link title='About Us' href='/aboutus' className={styles.link}> About Us </Link> </h3>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Our Heritage' href='/' className={styles.link}> Our Heritage </Link>
+                                <Link title='Our Heritage' href='/ourheritage' className={styles.link}> Our Heritage </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>
@@ -52,7 +53,7 @@ const Footer = () => {
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Diversity' href='/' className={styles.link}> Diversity </Link>
+                                <Link title='Diversity' href='/diversity' className={styles.link}> Diversity </Link>
                             </li>
                         </ul>
                     </div>

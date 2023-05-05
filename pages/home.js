@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <>
 
-      <Splash>
+      
         <Layout>
           <Banner />
           <Curation />
@@ -21,7 +21,6 @@ const Homepage = () => {
           <DiscoverMore />
           <Store />
         </Layout>
-      </Splash>
     </>
   )
 }
