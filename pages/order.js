@@ -8,7 +8,7 @@ const order = () => {
     <Layout>
       <StoreLocation/>
       <OrderOptionFilter/>
-      <BestSeller/>
+      {/* <BestSeller/> */}
     </Layout>
   )
 }
