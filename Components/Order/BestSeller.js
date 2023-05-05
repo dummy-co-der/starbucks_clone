@@ -11,7 +11,7 @@ const BestSeller = () => {
         <div className={style.orderpagedata}>
           {bestsellerdata.map((data,index)=>(
             <div className={style.card}>
-             <ItemCard data={data}/>
+             <ItemCard data={data} border='50%'/>
              </div>
           ))}
         </div>

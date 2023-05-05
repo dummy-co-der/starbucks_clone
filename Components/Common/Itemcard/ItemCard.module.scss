@@ -23,10 +23,13 @@
 
 .carddatalayout {
     margin-left: 12px;
+   
 }
 
 .cardimage {
-    border-radius: 12px;
+    margin-top: 0;
+    width:100px;
+    height:100px;
 }
 
 .carddatasublayout {
@@ -45,7 +48,6 @@
     background-color: $secondary-color;
     color: white;
     border-radius: 15px;
-
     :hover {
         color: aliceblue !important;
     }
@@ -55,4 +57,7 @@
     color: inherit;
     background-color: inherit;
     border-color: inherit;
+}
+.text{
+    margin-top: 0 !important;
 }
