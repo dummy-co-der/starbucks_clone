@@ -10,5 +10,10 @@ const AboutusData =
             title: 'Coffeehouse',
             description: 'Coffeehouse',
         },
+        {
+            image: '/Aboutus-images/coffee-house.png',
+            title: 'Coffeehouse',
+            description: 'Coffeehouse',
+        },
     ]
 export default AboutusData

@@ -5,19 +5,18 @@ import { Button } from 'antd'
 import Link from 'next/link'
 
 const StoreCard = ({ data }) => {
-    var w = "200px";
+    var h = "220px";
     return (
-        <div>
+        <div className={styles.cardimg}>
             <Card
                 className={styles.cardStyling}
                 cover={
                     <img
                         alt="Agra Store"
-                        height={w}
+                        height={h}
                         src={data.image}
                     />
                 }
-                style={{width: '500px'}}
             >
                 <h2> {data.title} </h2>
                 <p> {data.description} </p>

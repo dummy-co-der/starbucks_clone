@@ -1,9 +1,9 @@
 @import '../../Color.scss';
 
-.a_aboutus {
+.aboutus_content {
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 70px;
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
@@ -11,11 +11,34 @@
     margin-bottom: 2%;
 }
 
+.a_heading {
+    margin: 2rem 0;
+}
+
+.a_subheading {
+    margin-bottom: 0;
+}
+
+.a_quote {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.aboutus_content p {
+    margin-top: 0;
+}
+
 .aboutcard {
-    margin-top: 1%;
-    margin-bottom: 3%;
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+
+.card {
+    width: 48%;
+    height: 30%;
+    margin-bottom: 5%;
 }
