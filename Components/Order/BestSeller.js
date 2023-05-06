@@ -12,13 +12,8 @@ const BestSeller = () => {
         <div className={style.orderpagedata}>
           {bestsellerdata.map((data, index) => (
             <div className={style.card}>
-<<<<<<< HEAD
              <ItemCard data={data} border='50%'/>
              </div>
-=======
-              <ItemCard data={data} />
-            </div>
->>>>>>> ad1f9bed2d00548f17353e9ea7fcc27e618c0223
           ))}
         </div>
       </div>

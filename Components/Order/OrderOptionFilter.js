@@ -1,9 +1,20 @@
 import React, { useState } from 'react'
 import style from './Orderpagestyle/OrderOptionFilter.module.scss'
+import BestSeller from './BestSeller';
+import Drinks from './Drinks';
 
 const OrderOptionFilter = () => {
   const [currentselection, setcurrentSelection] = useState('bestseller');
+  function Page(){
+    if(currentselection=='bestseller'){
+      return <BestSeller/>
+    }
+    else if(currentselection=='drinks'){
+      return <Drinks/>
+    }
+  }
   return (
+    <div>
     <div className={style.filterbackground}>
       <div className={style.filtercontent}>
         <div
@@ -28,6 +39,8 @@ const OrderOptionFilter = () => {
           <h4>Ready To Eat</h4>
         </div>
       </div>
+    </div>
+    <Page/>
     </div>
   )
 }

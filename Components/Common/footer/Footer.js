@@ -25,20 +25,21 @@ const Footer = () => {
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Our Comapny' href='/' className={styles.link}> Our Company </Link>
+                                <Link title='Our Comapny' href='/ourcompany' className={styles.link}> Our Company </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Coffeehouse' href='/' className={styles.link}> Coffeehouse </Link>
+                                <Link title='Coffeehouse' href='/coffeehouse' className={styles.link}> Coffeehouse </Link>
                             </li>
                         </ul>
                     </div>
                     <div className={styles.responsibility}>
-                        <h3 className={styles.footerHeading}> Responsibility </h3>
+                        <h3 className={styles.footerHeading}>
+                            <Link title='Responsibility' href='/responsibility' className={styles.link}> Responsibility </Link> </h3>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Community' href='/' className={styles.link}> Community </Link>
+                                <Link title='Community' href='/community' className={styles.link}> Community </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>

@@ -1,9 +1,13 @@
 @import "/Components/Color.scss";
 
 .cardStyling {
-    width: 500px;
     cursor: pointer;
     box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+}
+
+.cardimg img {
+    object-fit: cover;
+    width: 100%;
 }
 
 .additembtn {
