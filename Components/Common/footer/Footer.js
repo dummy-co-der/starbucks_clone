@@ -44,12 +44,12 @@ const Footer = () => {
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Ethical Sourcing' href='/' className={styles.link}> Ethical Sourcing </Link>
+                                <Link title='Ethical Sourcing' href='/ethicalsourcing' className={styles.link}> Ethical Sourcing </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Environment' href='/' className={styles.link}> Environment </Link>
+                                <Link title='Environment' href='/environment' className={styles.link}> Environment </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>
@@ -59,7 +59,8 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className={styles.quick}>
-                        <h3 className={styles.footerHeading}> Quick Links </h3>
+                        <h3 className={styles.footerHeading}>
+                            <Link title='Quick Links' href='/quicklinks' className={styles.link}> Quick Links </Link> </h3>
                         <ul className={styles.boxlist}>
                             <li>
                                 <Link title='Delivery' href='/' className={styles.link}> Delivery </Link>
