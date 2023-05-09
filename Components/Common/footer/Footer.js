@@ -63,17 +63,17 @@ const Footer = () => {
                             <Link title='Quick Links' href='/quicklinks' className={styles.link}> Quick Links </Link> </h3>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Delivery' href='/' className={styles.link}> Delivery </Link>
+                                <Link title='Delivery' href='/delivery' className={styles.link}> Delivery </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Season Gifting' href='/' className={styles.link}> Season's Gifting </Link>
+                                <Link title='Season Gifting' href='/seasonsgifting' className={styles.link}> Season's Gifting </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Careers' href='/' className={styles.link}> Careers </Link>
+                                <Link title='Careers' href='/careers' className={styles.link}> Careers </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>
