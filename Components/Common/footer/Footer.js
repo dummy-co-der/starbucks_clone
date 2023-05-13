@@ -78,7 +78,7 @@ const Footer = () => {
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='Customer Service' href='/' className={styles.link}> Customer Service </Link>
+                                <Link title='Customer Service' href='/customerservice' className={styles.link}> Customer Service </Link>
                             </li>
                         </ul>
                         <ul className={styles.boxlist}>
