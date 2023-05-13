@@ -1,5 +1,5 @@
 import React from 'react'
-import GiftCard from '../Common/Giftcard/GiftCard'
+import GiftCard from '../Common/GiftCard/GiftCard'
 import AnyTimeData from '@/Data/AnyTimeData'
 import styles from '../Giftpage/Giftpagestyle/CongratulationsList.module.scss'
 
