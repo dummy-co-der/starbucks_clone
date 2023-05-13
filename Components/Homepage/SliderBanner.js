@@ -41,7 +41,7 @@ const SliderBanner = () => {
       }
     ],
     prevArrow: <Button> <DoubleRightOutlined/></Button>,
-    nextArrow: <button ></button>
+    nextArrow: <Button ></Button>
   };
       const sliderItems = SliderBannerData.map((data, index) => (
         <div key={index}>
