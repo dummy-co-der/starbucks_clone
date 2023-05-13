@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import style from './Orderpagestyle/Drinks.module.scss'
 import { ControlOutlined } from '@ant-design/icons'
-import { Filterdata, GetDrinksData } from '@/pages/store/slice/DrinksSlice'
+import { Filterdata, GetDrinksData } from '@/Components/slice/DrinksSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { flushSync } from 'react-dom'
 import drinksdata from '@/Data/DrinksData'
