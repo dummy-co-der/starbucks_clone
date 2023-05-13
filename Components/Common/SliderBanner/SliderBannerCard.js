@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './SliderBannerCard.module.scss';
 
-const SliderBannerCard = ({ data }) => {
+const SliderbannerCard = ({ data }) => {
   // console.log(data);
   return (
     <div
@@ -28,4 +28,4 @@ const SliderBannerCard = ({ data }) => {
   );
 };
 
-export default SliderBannerCard;
+export default SliderbannerCard;
