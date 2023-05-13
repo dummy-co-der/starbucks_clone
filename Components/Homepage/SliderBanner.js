@@ -1,6 +1,6 @@
 import React from 'react'
 import SliderBannerData from '@/Data/SliderBannerData'
-import SliderBannerCard from '../Common/Sliderbanner/SliderBannerCard'
+import SliderBannerCard from '../Common/Sliderbanner/SliderBannerCard';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
