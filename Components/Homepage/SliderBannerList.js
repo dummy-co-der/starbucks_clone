@@ -1,6 +1,6 @@
 import React from 'react'
 import SliderBannerData from '@/Data/SliderBannerData'
-import SliderBannerCard from '../Common/Sliderbanner/SliderBannerCard';
+import SliderbannerCard from '../Common/Sliderbanner/SliderBannerCard'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -46,7 +46,7 @@ const SliderBannerList = () => {
       const sliderItems = SliderBannerData.map((data, index) => (
         <div key={index}>
           <div className={style.sliderbanner}>
-          <SliderBannerCard data={data} />
+          <SliderbannerCard data={data} />
           </div>
         </div>
       ));
