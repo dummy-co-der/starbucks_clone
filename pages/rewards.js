@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '@/Components/Rewardspage/Banner'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Rewardspage = () => {
   return (

@@ -79,7 +79,10 @@
 
 .link:hover {
     text-decoration: underline $secondary-color 2px;
+<<<<<<< Updated upstream
     transition: text-decoration 0.25s ease-in-out;
+=======
+>>>>>>> Stashed changes
     text-underline-position: under;
     text-underline-offset: 19px;
 }

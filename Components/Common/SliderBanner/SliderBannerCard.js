@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './SliderBannerCard.module.scss';
-import { Button } from 'antd';
 
 const SliderBannerCard = ({ data }) => {
   // console.log(data);
@@ -21,7 +20,7 @@ const SliderBannerCard = ({ data }) => {
         <h5>Starting from</h5>
         <h3>₹{data.price}</h3>
         </div>
-        <Button className={style.bannerbtn}>Order Now</Button>
+        <button className={style.bannerbtn}>Order Now</button>
       </div>
     </div>
       {/* other content */}

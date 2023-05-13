@@ -1,6 +1,6 @@
 import React from 'react'
 import Coffeehouse from '@/Components/Coffeehousepage/Coffeehouse'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Coffeehousepage = () => {
   return (
