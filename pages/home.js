@@ -13,7 +13,7 @@ const Homepage = () => {
         <Layout>
           <Banner />
           <Curation />
-          <SliderBanner />
+          <SliderBannerList />
           <Recommend />
           <DiscoverMore />
           <Store />
