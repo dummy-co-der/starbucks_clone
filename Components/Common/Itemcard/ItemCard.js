@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Itemcard.module.scss'
+import styles from './ItemCard.module.scss'
 import { Button, Typography } from 'antd';
 
 const ItemCard = ({ data ,border}) => {
