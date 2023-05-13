@@ -1,6 +1,6 @@
 import React from 'react'
 import Environment from '@/Components/Environmentpage/Environment'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Environmentpage = () => {
   return (

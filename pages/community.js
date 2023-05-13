@@ -1,6 +1,6 @@
 import React from 'react'
 import Community from '@/Components/Communitypage/Community'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Communitypage = () => {
   return (

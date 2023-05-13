@@ -1,6 +1,6 @@
 import React from 'react'
 import Diversity from '@/Components/Diversitypage/Diversity'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Diversitypage = () => {
   return (

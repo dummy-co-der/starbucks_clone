@@ -5,7 +5,7 @@ import Recommend from '@/Components/Homepage/Recommend'
 import DiscoverMore from '@/Components/Homepage/DiscoverMore'
 import SliderBanner from '@/Components/Homepage/SliderBanner'
 import Store from '@/Components/Homepage/Store'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Homepage = () => {
   return (
