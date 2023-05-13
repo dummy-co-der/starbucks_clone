@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { DoubleRightOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 import style from './Homepagestyle/SliderBanner.module.scss'
-const SliderBanner = () => {
+const SliderBannerList = () => {
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -62,4 +62,4 @@ const SliderBanner = () => {
   )
 }
 
-export default SliderBanner
+export default SliderBannerList
