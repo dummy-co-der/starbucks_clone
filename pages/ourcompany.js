@@ -1,6 +1,6 @@
 import React from 'react'
 import Ourcompany from '@/Components/Ourcompanypage/Ourcompany'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Ourcompanypage = () => {
   return (

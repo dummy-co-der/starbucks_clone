@@ -55,9 +55,14 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/order"
+<<<<<<< Updated upstream:Components/Common/Navbar/Navbar.js
                 className={`${styles.link} ${activeLink === "order" ? styles.active : ""
                   }`}
                 // onClick={() => setActiveLink("order")}
+=======
+                className={`${styles.link} ${activeLink === "order" ? styles.active : ""}`}
+                onClick={() => setActiveLink("order")}
+>>>>>>> Stashed changes:Components/Common/Navigation/Navigation.js
               >
                 <div>
                   <h4>Order</h4>
@@ -68,9 +73,14 @@ export default function Navbar() {
               </div>
               <Link
                 href="/store"
+<<<<<<< Updated upstream:Components/Common/Navbar/Navbar.js
                 className={`${styles.link} ${activeLink === "store" ? styles.active : ""
                   }`}
                 // onClick={() => setActiveLink("store")}
+=======
+                className={`${styles.link} ${activeLink === "store" ? styles.active : ""}`}
+                onClick={() => setActiveLink("store")}
+>>>>>>> Stashed changes:Components/Common/Navigation/Navigation.js
               >
                 <div>
                   <h4>Store</h4>

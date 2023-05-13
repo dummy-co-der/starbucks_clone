@@ -1,6 +1,6 @@
 import React from 'react'
 import Delivery from '@/Components/Deliverypage/Delivery'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Deliverypage = () => {
   return (

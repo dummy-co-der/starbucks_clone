@@ -3,9 +3,9 @@ import Banner from '@/Components/Homepage/Banner'
 import Curation from '@/Components/Homepage/Curation'
 import Recommend from '@/Components/Homepage/Recommend'
 import DiscoverMore from '@/Components/Homepage/DiscoverMore'
-import Sliderbanner from '../Components/Homepage/SliderBanner'
+import SliderBannerList from '@/Components/Homepage/SliderBannerList'
 import Store from '@/Components/Homepage/Store'
-import Layout from './Layout'
+import Layout from '../Components/Layout'
 
 const Homepage = () => {
   return (
@@ -13,7 +13,7 @@ const Homepage = () => {
         <Layout>
           <Banner />
           <Curation />
-          <Sliderbanner />
+          <SliderBanner />
           <Recommend />
           <DiscoverMore />
           <Store />
