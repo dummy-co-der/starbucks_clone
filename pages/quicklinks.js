@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Quicklinkspage = () => {
   return (
-    <>
       <Layout>
         <Quicklinks />
       </Layout>
-    </>
   )
 }
 

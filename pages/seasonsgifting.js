@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Seasonsgiftingpage = () => {
   return (
-    <>
       <Layout>
         <Seasonsgifting />
       </Layout>
-    </>
   )
 }
 

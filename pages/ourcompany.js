@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Ourcompanypage = () => {
   return (
-    <>
       <Layout>
         <Ourcompany />
       </Layout>
-    </>
   )
 }
 

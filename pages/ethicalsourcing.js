@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Ethicalsourcingpage = () => {
   return (
-    <>
       <Layout>
         <Ethicalsourcing />
       </Layout>
-    </>
   )
 }
 

@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Ourheritagepage = () => {
   return (
-    <>
       <Layout>
         <Ourheritage />
       </Layout>
-    </>
   )
 }
 

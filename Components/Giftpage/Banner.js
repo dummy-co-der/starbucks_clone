@@ -3,27 +3,18 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Gbanner from '../../public/Gift-images/gift-banner.png'
 import { Button } from 'antd';
-<<<<<<< Updated upstream
 import Featured from '@/Components/Giftpage/Featured'
-=======
 // import Featured from '@/Components/Giftpage/Featured'
->>>>>>> Stashed changes
 import Anytime from '@/Components/Giftpage/Anytime'
 import Congratulations from '@/Components/Giftpage/Congratulations'
 import Thankyou from '@/Components/Giftpage/Thankyou'
 
 function Banner() {
-<<<<<<< Updated upstream
     const [activeLink, setActiveLink] = useState('featured');
     function Choose() {
         if (activeLink === 'featured')
             return <Featured />
         else if (activeLink === 'anytime')
-=======
-    const [activeLink, setActiveLink] = useState(0);
-    function Choose() {
-        if (activeLink === 'anytime')
->>>>>>> Stashed changes
             return <Anytime />
         else if (activeLink === 'congratulations')
             return <Congratulations />

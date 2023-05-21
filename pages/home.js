@@ -9,16 +9,14 @@ import Layout from '../Components/Layout'
 
 const Homepage = () => {
   return (
-    <>
         <Layout>
           <Banner />
           <Curation />
-          <SliderBanner />
+          <SliderBannerList />
           <Recommend />
           <DiscoverMore />
           <Store />
         </Layout>
-    </>
   )
 }
 

@@ -1,5 +1,4 @@
 import styles from './Giftpagestyle/Featured.module.scss'
-import AnytimeList from './AnytimeList'
 import FeaturedList from './FeaturedList'
 import CongratulationsList from './CongratulationsList'
 

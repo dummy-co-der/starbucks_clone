@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Coffeehousepage = () => {
   return (
-    <>
       <Layout>
         <Coffeehouse />
       </Layout>
-    </>
   )
 }
 
