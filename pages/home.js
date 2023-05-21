@@ -9,7 +9,6 @@ import Layout from '../Components/Layout'
 
 const Homepage = () => {
   return (
-    <>
         <Layout>
           <Banner />
           <Curation />
@@ -18,7 +17,6 @@ const Homepage = () => {
           <DiscoverMore />
           <Store />
         </Layout>
-    </>
   )
 }
 

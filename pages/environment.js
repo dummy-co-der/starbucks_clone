@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Environmentpage = () => {
   return (
-    <>
       <Layout>
         <Environment />
       </Layout>
-    </>
   )
 }
 

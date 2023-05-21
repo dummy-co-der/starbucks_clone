@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Communitypage = () => {
   return (
-    <>
       <Layout>
         <Community />
       </Layout>
-    </>
   )
 }
 

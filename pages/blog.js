@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Blogspage = () => {
   return (
-    <>
       <Layout>
         <Blog />
       </Layout>
-    </>
   )
 }
 

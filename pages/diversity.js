@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Diversitypage = () => {
   return (
-    <>
       <Layout>
         <Diversity />
       </Layout>
-    </>
   )
 }
 

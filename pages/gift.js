@@ -1,10 +1,8 @@
 import React from 'react'
 import Banner from '@/Components/Giftpage/Banner'
 import Layout from '../Components/Layout'
-import Footer from '@/Components/Common/Footer/Footer'
-import Navbar from '@/Components/Common/Navbar/Navbar'
 
-const Giftpage = () => {
+const gift = () => {
   return (
     <>
       <Layout>
@@ -14,4 +12,4 @@ const Giftpage = () => {
   )
 }
 
-export default Giftpage
+export default gift

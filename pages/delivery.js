@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Deliverypage = () => {
   return (
-    <>
       <Layout>
         <Delivery />
       </Layout>
-    </>
   )
 }
 

@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const Aboutuspage = () => {
   return (
-    <>
       <Layout>
         <Aboutus />
       </Layout>
-    </>
   )
 }
 
