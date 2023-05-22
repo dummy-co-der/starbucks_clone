@@ -1,11 +1,12 @@
 import React from 'react'
-import styles from './Footer.module.scss'
+import styles from './footer.module.scss'
 import Image from 'next/image'
 import logo from '../../../public/starbucks.png'
 import ios from '../../../public/Footer-images/appstoreiOS.png'
 import android from '../../../public/Footer-images/appstoreAndroid.png'
 import Link from 'next/link'
 import { InstagramOutlined, FacebookOutlined, TwitterOutlined } from '@ant-design/icons';
+
 
 const Footer = () => {
     return (
