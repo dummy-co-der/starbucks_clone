@@ -4,11 +4,9 @@ import Layout from '../Components/Layout'
 
 const gift = () => {
   return (
-    <>
       <Layout>
         <Banner />
       </Layout>
-    </>
   )
 }
 
