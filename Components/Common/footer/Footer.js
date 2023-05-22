@@ -7,6 +7,7 @@ import android from '../../../public/Footer-images/appstoreAndroid.png'
 import Link from 'next/link'
 import { InstagramOutlined, FacebookOutlined, TwitterOutlined } from '@ant-design/icons';
 
+
 const Footer = () => {
     return (
         <div className={styles.footer}>
