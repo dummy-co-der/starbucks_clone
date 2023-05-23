@@ -6,9 +6,15 @@ import DiscoverMore from '@/Components/Homepage/DiscoverMore'
 import SliderBannerList from '@/Components/Homepage/SliderBannerList'
 import Store from '@/Components/Homepage/Store'
 import Layout from '../Components/Layout'
+import Head from 'next/head'
 
 const Homepage = () => {
   return (
+    <>
+      <div>
+      <Head>
+      <title>Starbucks Home</title>
+      </Head>
         <Layout>
           <Banner />
           <Curation />
@@ -17,6 +23,8 @@ const Homepage = () => {
           <DiscoverMore />
           <Store />
         </Layout>
+        </div>
+    </>
   )
 }
 

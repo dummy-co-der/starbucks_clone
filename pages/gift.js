@@ -4,9 +4,16 @@ import Layout from '../Components/Layout'
 
 const gift = () => {
   return (
+    <>
+     <div>
+      <Head>
+      <title>Gift</title>
+      </Head>
       <Layout>
         <Banner />
       </Layout>
+      </div>
+    </>
   )
 }
 

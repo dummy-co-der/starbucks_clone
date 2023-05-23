@@ -18,5 +18,4 @@ const Featured = () => {
         </div>
     )
 }
-
 export default Featured
