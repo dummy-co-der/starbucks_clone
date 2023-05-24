@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import style from './Orderpagestyle/OrderOptionFilter.module.scss'
 import BestSeller from './BestSeller';
 import Drinks from './Drinks';
-
+import Coffee from './Coffee';
+import ReadyToEat from './ReadyToEat';
 const OrderOptionFilter = () => {
   const [currentselection, setcurrentSelection] = useState('bestseller');
   function Page(){
@@ -11,6 +12,12 @@ const OrderOptionFilter = () => {
     }
     else if(currentselection=='drinks'){
       return <Drinks/>
+    }
+    else if(currentselection=='coffee'){
+      return <Coffee/>
+    }
+    else if(currentselection=='ready'){
+      return <ReadyToEat/>
     }
   }
   return (

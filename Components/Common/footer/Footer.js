@@ -84,7 +84,7 @@ const Footer = () => {
                         </ul>
                         <ul className={styles.boxlist}>
                             <li>
-                                <Link title='FAQs' href='/' className={styles.link}> FAQs </Link>
+                                <Link title='FAQs' href='/faq' className={styles.link}> FAQs </Link>
                             </li>
                         </ul>
                     </div>
@@ -110,10 +110,10 @@ const Footer = () => {
                     </div>
                     <div className={styles.store}>
                         <Link href='https://apps.apple.com/in/app/starbucks-india/id1210203958'>
-                            <Image src={ios} alt='ios' height={64} width={182} />
+                            <Image src={ios} alt='ios' height={55} width={175} />
                         </Link>
                         <Link href='https://play.google.com/store/apps/details?id=com.starbucks.in'>
-                            <Image src={android} alt='android' height={64} width={182} />
+                            <Image src={android} alt='android' height={55} width={175} />
                         </Link>
                     </div>
                 </div>
@@ -129,7 +129,7 @@ const Footer = () => {
                             <Link title='Terms of Use' href='/' className={styles.link}> Terms of Use </Link>
                         </li>
                         <li className={styles.item2}>
-                            <Link title='Contact Us' href='/' className={styles.link}> Contact Us </Link>
+                            <Link title='Contact Us' href='/faq' className={styles.link}> Contact Us </Link>
                         </li>
                     </ul>
                     <ul className={styles.legallist}>
