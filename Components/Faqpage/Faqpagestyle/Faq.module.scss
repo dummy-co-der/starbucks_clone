@@ -70,6 +70,10 @@
 .title {
     color: #000000de;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     border-bottom: 1px solid #c8c9ca;
     font-weight: 400;
     font-size: 18px;
@@ -81,6 +85,10 @@
 
 .subQuestions {
     color: #1e3932;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     font-size: 15px;
     cursor: pointer;
     border-bottom: 1px solid #c8c9ca;
@@ -102,4 +110,13 @@
     margin-left: 8rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.toggleicondiv{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

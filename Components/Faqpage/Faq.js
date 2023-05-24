@@ -6,6 +6,7 @@ import image1 from '../../public/Faq-images/image1.png'
 import { PhoneOutlined, SearchOutlined } from '@ant-design/icons'
 import { Button, Input, Space } from 'antd'
 import Link from 'next/link'
+import { DownOutlined } from '@ant-design/icons'
 
 const Faq = () => {
     const [expandedQuestion, setExpandedQuestion] = useState(null);
@@ -59,12 +60,18 @@ const Faq = () => {
                             <div key={i}>
                                 <div className={styles.title}>
                                     <h4 onClick={() => toggleQuestion(i)}>{faqItem.question} </h4>
+                                    <div className={styles.toggleicondiv}>
+                                    <DownOutlined onClick={() => toggleQuestion(i)} style={{ color: "white" }}/>
+                                    </div>
                                 </div>
                                 {expandedQuestion === i &&
                                     faqItem.subQuestions.map((subItem, j) => (
                                         <div key={j}>
                                             <div className={styles.subQuestions}>
                                                 <h4 onClick={() => toggleSubQuestion(j)}>{subItem.question} </h4>
+                                                <div className={styles.toggleicondiv}>
+                                                <DownOutlined onClick={() => toggleSubQuestion(i)} style={{ color: "white" }}/>
+                                                </div>
                                             </div>
                                             {expandedSubQuestion === j && <p className={styles.answers}> {subItem.answer} </p>}
                                         </div>
