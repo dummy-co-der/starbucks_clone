@@ -1,20 +1,24 @@
 @import '../../Color.scss';
-.sliderBannerCard{
+
+.sliderBannerCard {
     margin: 10px;
     border-radius: 15px;
     display: flex;
     color: white;
     width: 100%;
 }
-.imagebox{
-  width: 12%;
-  align-self: center;
-  flex: 0 0 auto;
+
+.imagebox {
+    width: 12%;
+    align-self: center;
+    flex: 0 0 auto;
 }
-.images{
+
+.images {
     width: 80%;
 }
-.bottomdiv{
+
+.bottomdiv {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,10 +26,12 @@
     padding: 15px;
     width: 100%;
 }
-.datadiv{
+
+.datadiv {
     width: 80%;
 }
-.bannerbtn{
+
+.bannerbtn {
     border-radius: 20px;
     padding: 20px 40px;
     display: flex;
