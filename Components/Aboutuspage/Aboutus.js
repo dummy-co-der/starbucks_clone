@@ -2,13 +2,10 @@ import React from 'react'
 import styles from '../Aboutuspage/Aboutuspagestyle/Aboutus.module.scss'
 import AboutusData from '@/Data/AboutusData'
 import StoreCard from '../Common/Storecard/StoreCard'
-// import { useState } from 'react'
-// import { Button } from 'antd'
 
 const Aboutus = () => {
     return (
         <div className={styles.aboutus_content}>
-            <p> Home Articles </p>
             <h2 style={{ marginBottom: '0' }}> About Us </h2>
             <p style={{ color: '#00000094', fontWeight: '600', lineHeight: '20px' }}> About Us </p>
             <h1 className={styles.a_subheading}> About Us </h1>

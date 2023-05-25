@@ -5,7 +5,6 @@ import Link from 'next/link'
 const Customer = () => {
     return (
         <div className={styles.diversity_content}>
-            <p> Home Articles </p>
             <h2 className={styles.d_heading}> Customer Service </h2>
             <h1 className={styles.d_subheading}> Contact us </h1>
             <h3 className={styles.d_quote}> Hi, Welcome to Starbucks. What can we do for you? </h3>

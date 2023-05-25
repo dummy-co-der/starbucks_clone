@@ -3,10 +3,9 @@ import styles from './Faqpagestyle/Faq.module.scss'
 import FaqData from '@/Data/FaqData'
 import Image from 'next/image'
 import image1 from '../../public/Faq-images/image1.png'
-import { PhoneOutlined, SearchOutlined } from '@ant-design/icons'
+import { PhoneOutlined, SearchOutlined, DownOutlined } from '@ant-design/icons'
 import { Button, Input, Space } from 'antd'
 import Link from 'next/link'
-import { DownOutlined } from '@ant-design/icons'
 
 const Faq = () => {
     const [expandedQuestion, setExpandedQuestion] = useState(null);
@@ -30,7 +29,6 @@ const Faq = () => {
 
     return (
         <div className={styles.faq}>
-            <p> Profile Account Help Center </p>
             <div className={styles.backcolor}>
                 <div className={styles.backcolor_content}>
                     <div className={styles.head}>
@@ -61,7 +59,7 @@ const Faq = () => {
                                 <div className={styles.title}>
                                     <h4 onClick={() => toggleQuestion(i)}>{faqItem.question} </h4>
                                     <div className={styles.toggleicondiv}>
-                                    <DownOutlined onClick={() => toggleQuestion(i)} style={{ color: "white" }}/>
+                                        <DownOutlined onClick={() => toggleQuestion(i)} style={{ color: "black" }} />
                                     </div>
                                 </div>
                                 {expandedQuestion === i &&
@@ -70,7 +68,7 @@ const Faq = () => {
                                             <div className={styles.subQuestions}>
                                                 <h4 onClick={() => toggleSubQuestion(j)}>{subItem.question} </h4>
                                                 <div className={styles.toggleicondiv}>
-                                                <DownOutlined onClick={() => toggleSubQuestion(i)} style={{ color: "white" }}/>
+                                                    <DownOutlined onClick={() => toggleSubQuestion(i)} style={{ color: "black" }} />
                                                 </div>
                                             </div>
                                             {expandedSubQuestion === j && <p className={styles.answers}> {subItem.answer} </p>}

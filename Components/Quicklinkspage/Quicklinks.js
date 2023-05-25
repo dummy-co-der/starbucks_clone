@@ -6,7 +6,6 @@ import StoreCard from '../Common/Storecard/StoreCard'
 const Quicklinks = () => {
     return (
         <div className={styles.aboutus_content}>
-            <p> Home Articles </p>
             <h1 className={styles.a_subheading} style={{ marginBottom: '4rem' }}> Quick Links </h1>
             <div className={styles.aboutcard}>
                 {QuicklinksData.map((data, index) => (

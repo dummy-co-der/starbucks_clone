@@ -6,7 +6,6 @@ import StoreCard from '../Common/Storecard/StoreCard'
 const Environment = () => {
     return (
         <div className={styles.aboutus_content}>
-            <p> Home Articles </p>
             <h1 className={styles.a_subheading}> Environment </h1>
             <p style={{ color: '#00000094', fontWeight: '600', lineHeight: '20px', marginBottom: '3rem', marginTop: '.4rem' }}> Environmental Stewardship </p>
             <h1 className={styles.d_subheading}> Environmental Stewardship </h1>

@@ -6,7 +6,6 @@ import StoreCard from '../Common/Storecard/StoreCard'
 const Coffeehouse = () => {
     return (
         <div className={styles.aboutus_content}>
-            <p> Home Articles </p>
             <h1 className={styles.a_subheading} style={{ marginBottom: '5rem' }}> Coffeehouse </h1>
             <div className={styles.aboutcard}>
                 {CoffeehouseData.map((data, index) => (
