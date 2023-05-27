@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import style from './Orderpagestyle/drinks.module.scss'
+import style from './Orderpagestyle/Drinks.module.scss'
 import { ControlOutlined } from '@ant-design/icons'
 import { Filtermerchandisedata, GetMerchandiseData } from '@/Components/slice/MerchandiseSlice'
 import { useDispatch, useSelector } from 'react-redux'
