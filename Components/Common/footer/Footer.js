@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './footer.module.scss'
 import Image from 'next/image'
 import logo from '../../../public/starbucks.png'
 import ios from '../../../public/Footer-images/appstoreiOS.png'
 import android from '../../../public/Footer-images/appstoreAndroid.png'
 import Link from 'next/link'
-import { InstagramOutlined, FacebookOutlined, TwitterOutlined } from '@ant-design/icons';
-
+import { InstagramOutlined, FacebookOutlined, TwitterOutlined, CloseCircleOutlined, DownOutlined } from '@ant-design/icons';
+import TncData from '@/Data/TncData'
 
 const Footer = () => {
+
+    const [showContent, setShowContent] = useState(false);
+    const handleClick = () => {
+        setShowContent(!showContent);
+    };
+    const handleClose = () => {
+        setShowContent(false);
+    };
+
+    const [selectedQuestion, setSelectedQuestion] = useState(null);
+    const handleQuestionClick = (index) => {
+        setSelectedQuestion(index);
+    };
+
     return (
         <div className={styles.footer}>
             <div className={styles.footerContent}>
@@ -120,13 +134,98 @@ const Footer = () => {
                 <div className={styles.footerDown}>
                     <ul className={styles.legallist}>
                         <li className={styles.item1}>
-                            <Link title='Web Accessibility' href='/' className={styles.link}> Web Accessibility </Link>
+                            <div className={styles.slide_up}>
+                                <a onClick={handleClick}>
+                                    Web Accessibility
+                                </a>
+                                {showContent && (
+                                    <div className={styles.slide_up_content}>
+                                        <div className={styles.slide_heading}>
+                                            <h1> Terms and Conditions </h1>
+                                            <CloseCircleOutlined className={styles.closeButton} onClick={handleClose} />
+                                        </div>
+                                        <div className={styles.slide_content}>
+                                            {TncData.map((item, index) => (
+                                                <div key={index}>
+                                                    <div className={styles.title}>
+                                                        <h3
+                                                            className={selectedQuestion === index ? 'active' : ''}
+                                                            onClick={() => handleQuestionClick(index)}
+                                                        >
+                                                            {item.question}
+                                                        </h3>
+                                                        <DownOutlined onClick={() => handleQuestionClick(index)} />
+                                                    </div>
+                                                    {selectedQuestion === index && <p style={{ color: 'black'}}>{item.answer}</p>}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </li>
+
+                        <li className={styles.item1}>
+                        <div className={styles.slide_up}>
+                                <a onClick={handleClick}>
+                                    Privacy Statement
+                                </a>
+                                {showContent && (
+                                    <div className={styles.slide_up_content}>
+                                        <div className={styles.slide_heading}>
+                                            <h1> Terms and Conditions </h1>
+                                            <CloseCircleOutlined className={styles.closeButton} onClick={handleClose} />
+                                        </div>
+                                        <div className={styles.slide_content}>
+                                            {TncData.map((item, index) => (
+                                                <div key={index}>
+                                                    <div className={styles.title}>
+                                                        <h3
+                                                            className={selectedQuestion === index ? 'active' : ''}
+                                                            onClick={() => handleQuestionClick(index)}
+                                                        >
+                                                            {item.question}
+                                                        </h3>
+                                                        <DownOutlined onClick={() => handleQuestionClick(index)} />
+                                                    </div>
+                                                    {selectedQuestion === index && <p style={{ color: 'black'}}>{item.answer}</p>}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </li>
                         <li className={styles.item1}>
-                            <Link title='Privacy Statement' href='/' className={styles.link}> Privacy Statement </Link>
-                        </li>
-                        <li className={styles.item1}>
-                            <Link title='Terms of Use' href='/' className={styles.link}> Terms of Use </Link>
+                        <div className={styles.slide_up}>
+                                <a onClick={handleClick}>
+                                    Terms of Use
+                                </a>
+                                {showContent && (
+                                    <div className={styles.slide_up_content}>
+                                        <div className={styles.slide_heading}>
+                                            <h1> Terms and Conditions </h1>
+                                            <CloseCircleOutlined className={styles.closeButton} onClick={handleClose} />
+                                        </div>
+                                        <div className={styles.slide_content}>
+                                            {TncData.map((item, index) => (
+                                                <div key={index}>
+                                                    <div className={styles.title}>
+                                                        <h3
+                                                            className={selectedQuestion === index ? 'active' : ''}
+                                                            onClick={() => handleQuestionClick(index)}
+                                                        >
+                                                            {item.question}
+                                                        </h3>
+                                                        <DownOutlined onClick={() => handleQuestionClick(index)} />
+                                                    </div>
+                                                    {selectedQuestion === index && <p style={{ color: 'black'}}>{item.answer}</p>}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
                         </li>
                         <li className={styles.item2}>
                             <Link title='Contact Us' href='/faq' className={styles.link}> Contact Us </Link>

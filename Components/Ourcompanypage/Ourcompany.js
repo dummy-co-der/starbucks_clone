@@ -7,7 +7,6 @@ import StoreCard from '../Common/Storecard/StoreCard'
 const Ourcompany = () => {
     return (
         <div className={styles.aboutus_content}>
-            <p> Home Articles </p>
             <h2 style={{ marginBottom: '0' }}> Our Company </h2>
             <p style={{ color: '#00000094', fontWeight: '600', lineHeight: '20px' }}> Our Company </p>
             <h1 className={styles.a_subheading}> Our Company </h1>

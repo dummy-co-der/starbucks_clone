@@ -4,7 +4,6 @@ import styles from './Diversitypagestyle/Diversity.module.scss'
 const Diversity = () => {
     return (
         <div className={styles.diversity_content}>
-            <p> Home Articles </p>
             <h2 className={styles.d_heading}> Diversity </h2>
             <h1 className={styles.d_subheading}> Diversity </h1>
             <h3 className={styles.d_quote}> Aside from extraordinary coffee, Starbucks has made a business out of human connections, community involvement and the celebration of cultures. </h3>

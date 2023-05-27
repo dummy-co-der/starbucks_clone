@@ -68,7 +68,7 @@
     list-style: none;
     margin-bottom: 1rem;
 
-    :hover{
+    :hover {
         color: gray;
     }
 }
@@ -92,4 +92,82 @@
 .link {
     color: $bg-color;
     text-decoration: none;
+}
+
+
+.slide_up {
+    position: relative;
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.closeButton {
+    cursor: pointer;
+    font-size: 25px;
+    color: black;
+}
+
+.slide_up_content {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    bottom: 0px;
+    width: 210vh;
+    height: 80vh;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    box-shadow: 0 8px 10px -5px #0003, 0 16px 24px 2px #00000024, 0 6px 30px 5px #0000001f;
+    background: #fff;
+    color: black;
+    border-top-left-radius: 14px !important;
+    border-top-right-radius: 14px !important;
+    font: 400 14px/20px Roboto, Helvetica Neue, sans-serif;
+    letter-spacing: normal;
+}
+
+.slide_heading {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 9rem;
+    justify-content: space-between;
+    color: black;
+
+    h1:hover {
+        color: black;
+    }
+}
+
+.slide_heading:hover {
+    color: black;
+}
+
+.slide_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin-top: auto;
+    margin-bottom: 5rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+}
+
+.title {
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #c8c9ca;
+    font-size: 14px;
+
+    h3 {
+        color: black;
+    }
+}
+
+.title:hover {
+    color: black;
 }

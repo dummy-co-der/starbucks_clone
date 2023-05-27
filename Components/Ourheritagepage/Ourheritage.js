@@ -5,7 +5,6 @@ import Link from 'next/link'
 const Ourheritage = () => {
     return (
         <div className={styles.diversity_content}>
-            <p> Home Articles </p>
             <h2 style={{ marginBottom: '0' }}> Our Heritage </h2>
             <p style={{ color: '#00000094', fontWeight: '600', lineHeight: '20px' }}> Our Heritage </p>
             <h1 className={styles.d_subheading}> Our Heritage </h1>

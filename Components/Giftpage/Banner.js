@@ -23,9 +23,6 @@ function Banner() {
     }
     return (
         <div className={styles.g_banner}>
-            <div className={styles.g_heading}>
-                <p> Home Gift Cards </p>
-            </div>
             <div className={styles.g_content}>
                 <div className={styles.g_card}>
                     <Image src={Gbanner} alt="Gift's Banner" className={styles.g_card_background} />
