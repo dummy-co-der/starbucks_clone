@@ -4,6 +4,9 @@ import BestSeller from './BestSeller';
 import Drinks from './Drinks';
 import Coffee from './Coffee';
 import ReadyToEat from './ReadyToEat';
+import Foods from './Foods';
+import MerchandiseSlice from '../slice/MerchandiseSlice';
+import Merchandise from './Merchandise';
 const OrderOptionFilter = () => {
   const [currentselection, setcurrentSelection] = useState('bestseller');
   function Page(){
@@ -18,6 +21,12 @@ const OrderOptionFilter = () => {
     }
     else if(currentselection=='ready'){
       return <ReadyToEat/>
+    }
+    else if(currentselection=='foods'){
+      return <Foods/>
+    }
+    else if(currentselection=='merchandise'){
+      return <Merchandise/>
     }
   }
   return (

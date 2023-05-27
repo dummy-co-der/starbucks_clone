@@ -1,26 +1,26 @@
 import React, { useEffect } from 'react'
 import style from './Orderpagestyle/drinks.module.scss'
 import { ControlOutlined } from '@ant-design/icons'
-import { Filterfooddata, GetFoodData } from '@/Components/slice/FoodsSlice'
+import { Filtermerchandisedata, GetMerchandiseData } from '@/Components/slice/MerchandiseSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { flushSync } from 'react-dom'
 import ItemCard from '../Common/Itemcard/ItemCard'
-const Foods = () => {
+const Merchandise = () => {
 //   console.log(Foodsdata);
-  const Foods = useSelector(GetFoodData);
-  console.log(Foods);
+  const Merchandise = useSelector(GetMerchandiseData);
+  console.log(Merchandise);
   const dispatch = useDispatch();
   function filter(value){
-       dispatch(Filterfooddata(value));
+       dispatch(Filtermerchandisedata(value));
     //    console.log(Foods)
   }
   useEffect(() => {
-    console.log(Foods);
-  }, [Foods]);
+    console.log(Merchandise);
+  }, [Merchandise]);
   function Page(){
     return(
       <div className={style.drinkcardlist}>
-         {Foods.map((data,index)=>(
+         {Merchandise.map((data,index)=>(
              <div className={style.drinkcard}>
              <ItemCard data={data} border='50%'/>
              </div>
@@ -78,4 +78,4 @@ const Foods = () => {
   )
 }
 
-export default Foods
+export default Merchandise

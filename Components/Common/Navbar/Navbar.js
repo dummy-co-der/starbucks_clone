@@ -14,7 +14,7 @@ export default function Navbar() {
     </h5>
   );
   const router = useRouter();
-  const activeLink = (router.asPath.split('/')[1]!='')?router.asPath.split('/')[1]:'home';
+  const [activeLink,setActiveLink ] = useState((router.asPath.split('/')[1]!='')?router.asPath.split('/')[1]:'home');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     console.log("Modal opened");
@@ -87,11 +87,14 @@ export default function Navbar() {
             </Space.Compact>
           </div>
           <div className={styles.user}>
+          <Link
+                href="/profile">
             <Avatar
               style={{ border: "2px solid #1e3933", backgroundColor: "white", cursor: 'pointer' }}
               size={35}
               icon={<UserOutlined style={{ color: "#1e3933" }} />}
             />
+            </Link>
           </div>
         </div>
       </div>
