@@ -101,6 +101,36 @@ const drinksdata =  [
    },
    {
       image: 'Recommends/product3.jpg',
+      type:'cream',
+      vegan: 'yes',
+      title: 'Java Chip Frappuccino',
+      serving: 'PER SERVE(354 ml) - 367.50 Kcal',
+      description:'Rich in flavour, full-bodied espresso with hot water in true...',
+      price: '367.50',
+
+   },
+   {
+      image: 'Recommends/product3.jpg',
+      type:'hot',
+      vegan: 'yes',
+      title: 'Java Chip Frappuccino',
+      serving: 'PER SERVE(354 ml) - 367.50 Kcal',
+      description:'Rich in flavour, full-bodied espresso with hot water in true...',
+      price: '367.50',
+
+   },
+   {
+      image: 'Recommends/product3.jpg',
+      type:'hot',
+      vegan: 'yes',
+      title: 'Java Chip Frappuccino',
+      serving: 'PER SERVE(354 ml) - 367.50 Kcal',
+      description:'Rich in flavour, full-bodied espresso with hot water in true...',
+      price: '367.50',
+
+   },
+   {
+      image: 'Recommends/product3.jpg',
       type:'hot',
       vegan: 'yes',
       title: 'Java Chip Frappuccino',
@@ -117,6 +147,16 @@ const drinksdata =  [
       serving: 'PER SERVE(85 g) - 390 Kcal',
       description:'Rich in flavour, full-bodied espresso with hot water in true...',
       price: '194.25',
+
+   },
+   {
+      image: 'Recommends/product3.jpg',
+      type:'juice',
+      vegan: 'yes',
+      title: 'Java Chip Frappuccino',
+      serving: 'PER SERVE(354 ml) - 367.50 Kcal',
+      description:'Rich in flavour, full-bodied espresso with hot water in true...',
+      price: '367.50',
 
    },
    {

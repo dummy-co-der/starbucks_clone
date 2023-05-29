@@ -3,7 +3,7 @@ import logo from '../../../public/starbucks.png'
 import { Button, Modal, Input, Space, Avatar } from 'antd'
 import { useState } from 'react'
 import styles from './Navbar.module.scss'
-import { SearchOutlined, UserOutlined } from '@ant-design/icons'
+import { SearchOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
@@ -95,6 +95,9 @@ export default function Navbar() {
               icon={<UserOutlined style={{ color: "#1e3933" }} />}
             />
             </Link>
+            <div className={styles.cart}>
+            <ShoppingCartOutlined />
+            </div>
           </div>
         </div>
       </div>

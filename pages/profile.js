@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '@/Components/Layout'
-import Profile from './Profilepage/Profile'
+import Profile from '../Components/Profilepage/Profile'
 const profile = () => {
   return (
     <div>
