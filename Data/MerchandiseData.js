@@ -1,6 +1,7 @@
 const merchandisedata =  [
     {
         image: 'Recommends/product1.jpg',
+        type:'mugs',
         title: 'Ceramic Pink and White Mug - 295ml',
         description:'Ceramic hand painted mug with glossy glaze interior and regu...',
         price: '1500.50',
@@ -8,6 +9,7 @@ const merchandisedata =  [
      },
      {
         image: 'Recommends/product1.jpg',
+        type:'mugs',
         title: 'Savannah Animals Mug - 295ml',
         description:'Mug with all over glossy finish and giraffe head ornament o...',
         price: '2190.50',
@@ -15,6 +17,7 @@ const merchandisedata =  [
      },
      {
         image: 'Recommends/product2.jpg',
+        type:'mugs',
         title: 'Mint Blue Coral Reef Ceramic Mug (89 Ml)',
         description:'Mint Blue Coral Reef Ceramic Mug (89 Ml)An all mint blue demi mug with the classic embossed iconic s...',
         price: '1336.25',
@@ -22,12 +25,10 @@ const merchandisedata =  [
      },
      {
         image: 'Recommends/product3.jpg',
-        type:'contains egg',
-        vegan: 'yes',
-        title: 'Vegan Sausage Croissant Roll',
-        serving: 'PER SERVE(35 ml) - 367.50 Kcal',
-        description:'A hearty and appetizing vegan sausage mixed in a spiced toma...',
-        price: '388.50',
+        type:'mugs',
+        title: 'Siren On Coral Reef Ceramic Mug (355 Ml)',
+        description:'Experience the iridescent look of the siren on coral reef an...        ',
+        price: '1788.50',
 
      },
      {
