@@ -2,7 +2,7 @@ import { Button } from 'antd'
 import React from 'react'
 import logo from '../../public/profileDP.svg'
 import styles from './profilepagestyle/Profile.module.scss'
-// import { RightOutlined, SettingFilled, UserOutlined } from '@ant-design/icons'
+import { RightOutlined, SettingFilled, UserOutlined } from '@ant-design/icons'
 import Link from 'next/link'
 const Profile = () => {
   return (
@@ -23,14 +23,14 @@ const Profile = () => {
     </div>
     <div className={styles.help}>
     <div className={styles.profiletext}>
-    {/* <UserOutlined /> */}
+     <UserOutlined /> 
     <Link href='/faq' style={{textDecoration:'none',color:'black',paddingLeft:'20px'}}>
     <h4>HELP CENTER</h4>
     </Link>
     </div>
     <div>
     <Link href='/faq' style={{textDecoration:'none',color:'black'}}>
-    {/* <RightOutlined /> */}
+    <RightOutlined /> 
     </Link>
     </div>
     </div>
