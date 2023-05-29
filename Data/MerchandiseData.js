@@ -152,4 +152,4 @@ const merchandisedata =  [
 
  },
 ]
-export default merchandise;
+export default merchandisedata;
