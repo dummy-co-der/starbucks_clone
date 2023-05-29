@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../Components/Layout'
 import StoreLocation from '@/Components/Order/StoreLocation'
-import OrderOptionFilter from '@/Components/Order/OrderOptionFilter'
+// import OrderOptionFilter from '@/Components/Order/OrderOptionFilter'
 import Head from 'next/head'
 
 const order = () => {
@@ -12,7 +12,7 @@ const order = () => {
       </Head>
     <Layout>
       <StoreLocation/>
-      <OrderOptionFilter/>
+      {/* <OrderOptionFilter/> */}
     </Layout>
     </div>
   )
