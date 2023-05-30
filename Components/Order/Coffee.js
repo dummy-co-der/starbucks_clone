@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Orderpagestyle/Drinks.module.scss'
 import { ControlOutlined } from '@ant-design/icons'
 import { Filtercoffeedata,GetCoffeeData } from '../slice/CoffeeSlice'
@@ -8,21 +8,18 @@ import drinksdata from '@/Data/DrinksData'
 import ItemCard from '../Common/Itemcard/ItemCard'
 const Coffee = () => {
 //   console.log(drinksdata);
-  const drinks = useSelector(GetCoffeeData);
-  console.log(`drinks = ${drinks}`)
-  console.log(drinks);
+  const coffee = useSelector(GetCoffeeData);
+  const [selectedFilter, setSelectedFilter] = useState(null);
   const dispatch = useDispatch();
   function filter(value){
        dispatch(Filtercoffeedata(value));
     //    console.log(drinks)
+    setSelectedFilter(value);
   }
-  useEffect(() => {
-    console.log(drinks);
-  }, [drinks]);
   function Page(){
     return(
       <div className={style.drinkcardlist}>
-         {drinks.map((data,index)=>(
+         {coffee.map((data,index)=>(
              <div className={style.drinkcard}>
              <ItemCard data={data} border='50%'/>
              </div>
@@ -35,41 +32,13 @@ const Coffee = () => {
       <div className={style.drinksfilter}>
        <div className={style.drinksfiltersub}>
          <div><ControlOutlined/></div>
-         <div onClick={()=>filter('black')}>
-            <h4>Black</h4>
+         <div onClick={()=>filter('blends')}
+          className={selectedFilter === 'blends' ? style.selected : style.notselected}>
+            <h4>Blends</h4>
          </div>
-         <div onClick={()=>filter('blended')}>
-            <h4>Blended</h4>
-         </div>
-         <div onClick={()=>filter('brew')}>
-            <h4>Brew</h4>
-         </div>
-         <div onClick={()=>filter('caffeine free')}>
-            <h4>Caffeine Free</h4>
-         </div>
-         <div onClick={()=>filter('cold')}>
-            <h4>Cold</h4>
-         </div>
-         <div onClick={()=>filter('cream')}>
-            <h4>Cream</h4>
-         </div>
-         <div onClick={()=>filter('hot')}>
-            <h4>Hot</h4>
-         </div>
-         <div onClick={()=>filter('ice cream')}>
-            <h4>IceCream</h4>
-         </div>
-         <div onClick={()=>filter('juice')}>
-            <h4>Juice</h4>
-         </div>
-         <div onClick={()=>filter('milkshake')}>
-            <h4>Milkshake</h4>
-         </div>
-         <div onClick={()=>filter('nitro')}>
-            <h4>Nitro</h4>
-         </div>
-         <div onClick={()=>filter('on tap')}>
-            <h4>On Tap</h4>
+         <div onClick={()=>filter('Blonde roast')}
+         className={selectedFilter === 'Blonde roast' ? style.selected : style.notselected}>
+            <h4>Blonde roast</h4>
          </div>
        </div>
        </div>

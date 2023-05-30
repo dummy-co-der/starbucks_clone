@@ -1,58 +1,63 @@
-const merchandisedata =  [
+const coffeedata =  [
     {
         image: 'Recommends/product1.jpg',
-        type:'mugs',
-        title: 'Ceramic Pink and White Mug - 295ml',
-        description:'Ceramic hand painted mug with glossy glaze interior and regu...',
-        price: '1500.50',
+        type:'blends',
+        vegan: 'yes',
+        title: 'Tribute Blend',
+        description:'Tribute blend is a tribute to accomplishments of coffee prod...',
+        price: '1400.00',
 
      },
      {
         image: 'Recommends/product1.jpg',
-        type:'mugs',
-        title: 'Savannah Animals Mug - 295ml',
-        description:'Mug with all over glossy finish and giraffe head ornament o...',
-        price: '2190.50',
+        type:'blends',
+        vegan: 'yes',
+        title: 'Blonde roast 125 Gms',
+        description:'A unique blend tailor made to bring out the lighter side of ..',
+        price: '375.50',
 
      },
      {
         image: 'Recommends/product2.jpg',
-        type:'mugs',
-        title: 'Mint Blue Coral Reef Ceramic Mug (89 Ml)',
-        description:'Mint Blue Coral Reef Ceramic Mug (89 Ml)An all mint blue demi mug with the classic embossed iconic s...',
-        price: '1336.25',
+        type:'blends',
+        vegan: 'yes',
+        title: 'Blonde Roast - 250 Grams',
+        description:'A unique blend tailor made to bring out the lighter side of ...',
+        price: '750.25',
 
      },
      {
         image: 'Recommends/product3.jpg',
-        type:'mugs',
-        title: 'Siren On Coral Reef Ceramic Mug (355 Ml)',
-        description:'Experience the iridescent look of the siren on coral reef an...        ',
-        price: '1788.50',
+        type:'blends',
+        vegan: 'yes',
+        title: 'Italian Roast',
+        description:'This coffee gets its distinctive sweetness from the way it i...',
+        price: '1100.50',
 
      },
      {
         image: 'Recommends/product2.jpg',
-        type:'cups',
-        title: 'Bling Yellow Cold Cup -709ml',
-        description:'Yellow colored textured cold cup with elephant topper straw....',
-        price: '2200.25',
+        type:'blends',
+        vegan: 'yes',
+        title: 'Via - Italian Roast',
+        description:'Now you can enjoy our bold and roasty-sweet Italian Roast in...',
+        price: '650.00',
 
      },
      {
         image: 'Recommends/product3.jpg',
-        type:'cups',
-        title: 'Black Stainless Steel Cold Cup (473 Ml)',
-        description:'Stylish, chic, and minimal all black cold cup to enjoy your ...',
-        price: '2000.50',
+        type:'Blonde roast',
+        title: 'Blonde roast 125 Gms',
+        description:'A unique blend tailor made to bring out the lighter side of ...',
+        price: '375.00',
 
      },
      {
         image: 'Recommends/product2.jpg',
-        type:'cups',
-        title: 'Color Changing Coral Wreath Resuable Hot Cup ...',
-        description:"Enjoy this reusable cup while it changes color as you pour y...",
-        price: '604.25',
+        type:'Blonde roast',
+        title: 'Blonde roast 125 Gms',
+        description:"A unique blend tailor made to bring out the lighter side of ...",
+        price: '750.00',
 
      },
      {
@@ -176,4 +181,4 @@ const merchandisedata =  [
 
 },
 ]
-export default merchandisedata;
+export default coffeedata;

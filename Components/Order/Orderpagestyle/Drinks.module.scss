@@ -44,22 +44,25 @@
     }
   }
   .selected{
-    border: 3px solid green;
+    
     height:35px;
-    width:120px;
+    width:100%;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
+    background-color: #198754;
+    color:white;
   }
   .notselected{
     height:35px;
     border-radius: 12px;
-    width:100px;
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
     cursor: pointer;
+    background-color: #ebebeb;
   }

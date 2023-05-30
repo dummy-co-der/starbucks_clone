@@ -1,20 +1,38 @@
-const merchandisedata =  [
+const readytoeatdata =  [
     {
         image: 'Recommends/product1.jpg',
-        type:'mugs',
-        title: 'Ceramic Pink and White Mug - 295ml',
-        description:'Ceramic hand painted mug with glossy glaze interior and regu...',
-        price: '1500.50',
+        type:'chocolate',
+        vegan:'yes',
+        title: 'Raksha Bandhan Chocolate Box',
+        description:'A box of chocolates with 2 pieces each of Tiramisu, Dark cho...',
+        price: '645.50',
 
      },
      {
+      image: 'Recommends/product1.jpg',
+      type:'chocolate',
+      vegan:'yes',
+      title: 'Raksha Bandhan Chocolate Box',
+      description:'A box of chocolates with 2 pieces each of Tiramisu, Dark cho...',
+      price: '645.50',
+
+   },
+     {
         image: 'Recommends/product1.jpg',
-        type:'mugs',
-        title: 'Savannah Animals Mug - 295ml',
-        description:'Mug with all over glossy finish and giraffe head ornament o...',
-        price: '2190.50',
+        type:'nuts',
+        title: 'Roasted & Salted Almonds',
+        description:' A packet of Roasted and Salted Almonds of weight 250gms per packet',
+        price: '180.50',
 
      },
+     {
+      image: 'Recommends/product1.jpg',
+      type:'nuts',
+      title: 'Roasted & Salted Cashews',
+      description:'A packet of Roasted and Salted Cashews of weight 250gms per packet',
+      price: '280.50',
+
+   },
      {
         image: 'Recommends/product2.jpg',
         type:'mugs',
@@ -176,4 +194,4 @@ const merchandisedata =  [
 
 },
 ]
-export default merchandisedata;
+export default readytoeatdata;

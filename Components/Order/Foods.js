@@ -8,16 +8,12 @@ import ItemCard from '../Common/Itemcard/ItemCard'
 const Foods = () => {
 //   console.log(Foodsdata);
   const Foods = useSelector(GetFoodData);
-  console.log(Foods);
   const [selectedFilter, setSelectedFilter] = useState(null);
   const dispatch = useDispatch();
   function filter(value){
        dispatch(Filterfooddata(value));
        setSelectedFilter(value);
   }
-  useEffect(() => {
-    console.log(Foods);
-  }, [Foods]);
   function Page(){
     return(
       <div className={style.drinkcardlist}>

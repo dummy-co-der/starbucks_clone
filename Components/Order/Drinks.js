@@ -10,16 +10,12 @@ const Drinks = () => {
 //   console.log(drinksdata);
   const drinks = useSelector(GetDrinksData);
   const [selectedFilter, setSelectedFilter] = useState(null);
-  console.log(drinks);
   const dispatch = useDispatch();
   function filter(value){
        dispatch(Filterdata(value));
        setSelectedFilter(value);
     //    console.log(drinks)
   }
-  useEffect(() => {
-    console.log(drinks);
-  }, [drinks]);
   function Page(){
     return(
       <div className={style.drinkcardlist}>
@@ -57,20 +53,8 @@ const Drinks = () => {
          <div onClick={()=>filter('hot')} className={selectedFilter === 'hot' ? style.selected : style.notselected}>
             <h4>Hot</h4>
          </div>
-         <div onClick={()=>filter('ice cream')} className={selectedFilter === 'ice cream' ? style.selected : style.notselected}>
-            <h4>IceCream</h4>
-         </div>
          <div onClick={()=>filter('juice')} className={selectedFilter === 'juice' ? style.selected : style.notselected}>
             <h4>Juice</h4>
-         </div>
-         <div onClick={()=>filter('milkshake')} className={selectedFilter === 'milkshake' ? style.selected : style.notselected}>
-            <h4>Milkshake</h4>
-         </div>
-         <div onClick={()=>filter('nitro')} className={selectedFilter === 'nitro' ? style.selected : style.notselected}>
-            <h4>Nitro</h4>
-         </div>
-         <div onClick={()=>filter('on tap')} className={selectedFilter === 'on tap' ? style.selected : style.notselected}>
-            <h4>On Tap</h4>
          </div>
        </div>
        </div>

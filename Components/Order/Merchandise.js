@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Orderpagestyle/Drinks.module.scss'
 import { ControlOutlined } from '@ant-design/icons'
 import { Filtermerchandisedata, GetMerchandiseData } from '@/Components/slice/MerchandiseSlice'
@@ -8,15 +8,14 @@ import ItemCard from '../Common/Itemcard/ItemCard'
 const Merchandise = () => {
 //   console.log(Foodsdata);
   const Merchandise = useSelector(GetMerchandiseData);
-  console.log(Merchandise);
+  const [selectedFilter, setSelectedFilter] = useState(null);
+//   console.log(Merchandise);
   const dispatch = useDispatch();
   function filter(value){
+       console.log(value);
        dispatch(Filtermerchandisedata(value));
-    //    console.log(Foods)
+       setSelectedFilter(value);
   }
-  useEffect(() => {
-    console.log(Merchandise);
-  }, [Merchandise]);
   function Page(){
     return(
       <div className={style.drinkcardlist}>
@@ -28,27 +27,34 @@ const Merchandise = () => {
       </div>
     )
   }
+  console.log(selectedFilter);
   return (
     <div className={style.drinks}>
       <div className={style.drinksfilter}>
        <div className={style.drinksfiltersub}>
          <div><ControlOutlined/></div>
-         <div onClick={()=>filter('mugs')}>
+         <div onClick={()=>filter('mugs')}
+         className={selectedFilter === 'mugs' ? style.selected : style.notselected}>
             <h4>Mugs</h4>
          </div>
-         <div onClick={()=>filter('cups')}>
+         <div onClick={()=>filter('cups')}
+         className={selectedFilter === 'cups' ? style.selected : style.notselected}>
             <h4>Cups</h4>
          </div>
-         <div onClick={()=>filter('tumblers')}>
+         <div onClick={()=>filter('tumblers')}
+         className={selectedFilter === 'tumblers' ? style.selected : style.notselected}>
             <h4>Tumblers</h4>
          </div>
-         <div onClick={()=>filter('water bottles')}>
+         <div onClick={()=>filter('water bottles')}
+         className={selectedFilter === 'water bottles' ? style.selected : style.notselected}>
             <h4>Water Bottles</h4>
          </div>
-         <div onClick={()=>filter('stationary')}>
+         <div onClick={()=>filter('stationary')}
+         className={selectedFilter === 'stationary' ? style.selected : style.notselected}>
             <h4>Stationary</h4>
          </div>
-         <div onClick={()=>filter('accessories')}>
+         <div onClick={()=>filter('accessories')}
+         className={selectedFilter === 'accessories' ? style.selected : style.notselected}>
             <h4>Accessories</h4>
          </div>
        </div>
