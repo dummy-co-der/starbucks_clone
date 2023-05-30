@@ -5,7 +5,6 @@ import { Filterfooddata, GetFoodData } from '@/Components/slice/FoodsSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import { flushSync } from 'react-dom'
 import ItemCard from '../Common/Itemcard/ItemCard'
-import { div } from 'antd/es/radio'
 const Foods = () => {
 //   console.log(Foodsdata);
   const Foods = useSelector(GetFoodData);

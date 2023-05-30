@@ -33,41 +33,23 @@ const Merchandise = () => {
       <div className={style.drinksfilter}>
        <div className={style.drinksfiltersub}>
          <div><ControlOutlined/></div>
-         <div onClick={()=>filter('black')}>
-            <h4>Black</h4>
+         <div onClick={()=>filter('mugs')}>
+            <h4>Mugs</h4>
          </div>
-         <div onClick={()=>filter('blended')}>
-            <h4>Blended</h4>
+         <div onClick={()=>filter('cups')}>
+            <h4>Cups</h4>
          </div>
-         <div onClick={()=>filter('brew')}>
-            <h4>Brew</h4>
+         <div onClick={()=>filter('tumblers')}>
+            <h4>Tumblers</h4>
          </div>
-         <div onClick={()=>filter('caffeine free')}>
-            <h4>Caffeine Free</h4>
+         <div onClick={()=>filter('water bottles')}>
+            <h4>Water Bottles</h4>
          </div>
-         <div onClick={()=>filter('cold')}>
-            <h4>Cold</h4>
+         <div onClick={()=>filter('stationary')}>
+            <h4>Stationary</h4>
          </div>
-         <div onClick={()=>filter('cream')}>
-            <h4>Cream</h4>
-         </div>
-         <div onClick={()=>filter('hot')}>
-            <h4>Hot</h4>
-         </div>
-         <div onClick={()=>filter('ice cream')}>
-            <h4>IceCream</h4>
-         </div>
-         <div onClick={()=>filter('juice')}>
-            <h4>Juice</h4>
-         </div>
-         <div onClick={()=>filter('milkshake')}>
-            <h4>Milkshake</h4>
-         </div>
-         <div onClick={()=>filter('nitro')}>
-            <h4>Nitro</h4>
-         </div>
-         <div onClick={()=>filter('on tap')}>
-            <h4>On Tap</h4>
+         <div onClick={()=>filter('accessories')}>
+            <h4>Accessories</h4>
          </div>
        </div>
        </div>

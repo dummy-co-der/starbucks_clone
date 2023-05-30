@@ -49,7 +49,7 @@ const merchandisedata =  [
      },
      {
         image: 'Recommends/product2.jpg',
-        type:'cups',
+        type:'mugs',
         title: 'Color Changing Coral Wreath Resuable Hot Cup ...',
         description:"Enjoy this reusable cup while it changes color as you pour y...",
         price: '604.25',
@@ -57,7 +57,7 @@ const merchandisedata =  [
      },
      {
         image: 'Recommends/product3.jpg',
-        type:'cups',
+        type:'mugs',
         title: 'Green Cold Useable Cup Cup (710 Ml)',
         description:'Enjoy your cold beverage in this reusable coffee cup while b...',
         price: '414.50',
@@ -65,7 +65,7 @@ const merchandisedata =  [
      },
      {
       image: 'Recommends/product3.jpg',
-      type:'tumblers',
+      type:'tumbler',
       title: 'Scatter Savannah Animals Tumbler - 473ml',
       description:'Double wall plastic insulated tumbler with sophisticated art...',
       price: '1750.50',
@@ -73,7 +73,7 @@ const merchandisedata =  [
    },
    {
       image: 'Recommends/product2.jpg',
-      type:'tumblers',
+      type:'tumbler',
       title: 'Green Siren Stainless Steel Tumbler (473 Ml)',
       description:'The tumbler with classic siren Logo has a slim body which m...',
       price: '2600.50',
@@ -81,7 +81,7 @@ const merchandisedata =  [
    },
    {
       image: 'Recommends/product3.jpg',
-      type:'tumblers',
+      type:'tumbler',
       title: 'Gradient Blue Stainless Steel Tumbler (473 Ml...',
       description:'Freshly Assembled Sandwich A western styled chicken salad sa...',
       price: '1367.50',
@@ -89,7 +89,7 @@ const merchandisedata =  [
    },
    {
     image: 'Recommends/product3.jpg',
-    type:'tumblers',
+    type:'tumbler',
     title: 'Create Your Own Tumbler (473 Ml)',
     description:'Freshly Assembled Sandwich A western styled chicken salad sa...',
     price: '3167.50',
@@ -145,14 +145,6 @@ const merchandisedata =  [
 },
 {
    image: 'Recommends/product3.jpg',
-   type:'stationary',
-   title: 'Starbucks Bearista Pen',
-   description:'Carry your favorite little Starbucks bearista with you where...',
-   price: '300.50',
-
-},
-{
-   image: 'Recommends/product3.jpg',
    type:'accessories',
    title: 'Starbucks Set Of 4 Brown Coasters',
    description:'Style your home with a unique set of Starbucks coasters',
@@ -161,7 +153,7 @@ const merchandisedata =  [
 },
 {
    image: 'Recommends/product3.jpg',
-   type:'accessories',
+   type:'acessories',
    title: 'Starbucks Bearista Keychain',
    description:'Carry your favorite little Starbucks bearista with you where...',
    price: '350.50',
@@ -169,7 +161,7 @@ const merchandisedata =  [
 },
 {
    image: 'Recommends/product3.jpg',
-   type:'accessories',
+   type:'acessories',
    title: 'Starbucks Crossbody Bag',
    description:'Carry your go to essentials in this chic crossbody bag which...',
    price: '1300.50',
@@ -177,7 +169,7 @@ const merchandisedata =  [
 },
 {
    image: 'Recommends/product3.jpg',
-   type:'accessories',
+   type:'acessories',
    title: 'Starbucks Cup Clip',
    description:'Carry your favorite little Starbucks bearista with you where...',
    price: '450.50',

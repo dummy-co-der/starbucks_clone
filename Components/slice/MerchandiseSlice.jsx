@@ -1,16 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit"
 import bestsellerdata from "@/Data/Bestsellerdata"
-import drinksdata from "@/Data/DrinksData";
+import merchandisedata from "@/Data/MerchandiseData"
 export const MerchandiseSlice = createSlice({
   name: 'merchandise',
   initialState: {
-    merchandise:drinksdata
+    merchandise:merchandisedata
   },
   reducers: {
     Filtermerchandisedata: (state, action) => {
         // console.log(action);
         const key = action.payload
-        state.merchandise = drinksdata.filter((merchandise) => merchandise.type === key);
+        state.merchandise = merchandisedata.filter((merchandise) => merchandise.type === key);
       },
   }
 })

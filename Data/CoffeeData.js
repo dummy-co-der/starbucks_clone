@@ -65,7 +65,7 @@ const merchandisedata =  [
      },
      {
       image: 'Recommends/product3.jpg',
-      type:'tumblers',
+      type:'tumbler',
       title: 'Scatter Savannah Animals Tumbler - 473ml',
       description:'Double wall plastic insulated tumbler with sophisticated art...',
       price: '1750.50',
@@ -73,7 +73,7 @@ const merchandisedata =  [
    },
    {
       image: 'Recommends/product2.jpg',
-      type:'tumblers',
+      type:'tumbler',
       title: 'Green Siren Stainless Steel Tumbler (473 Ml)',
       description:'The tumbler with classic siren Logo has a slim body which m...',
       price: '2600.50',
@@ -81,7 +81,7 @@ const merchandisedata =  [
    },
    {
       image: 'Recommends/product3.jpg',
-      type:'tumblers',
+      type:'tumbler',
       title: 'Gradient Blue Stainless Steel Tumbler (473 Ml...',
       description:'Freshly Assembled Sandwich A western styled chicken salad sa...',
       price: '1367.50',
@@ -89,7 +89,7 @@ const merchandisedata =  [
    },
    {
     image: 'Recommends/product3.jpg',
-    type:'tumblers',
+    type:'tumbler',
     title: 'Create Your Own Tumbler (473 Ml)',
     description:'Freshly Assembled Sandwich A western styled chicken salad sa...',
     price: '3167.50',
@@ -133,14 +133,6 @@ const merchandisedata =  [
    title: 'Set Of 3 Starbucks Notebooks',
    description:'Notebooks with Starbucks branding.',
    price: '925.50',
-
-},
-{
-   image: 'Recommends/product3.jpg',
-   type:'stationary',
-   title: 'Starbucks Bearista Pen',
-   description:'Carry your favorite little Starbucks bearista with you where...',
-   price: '300.50',
 
 },
 {
