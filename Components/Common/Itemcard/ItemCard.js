@@ -11,7 +11,7 @@ const ItemCard = ({ data ,border}) => {
         <div className={styles.cardlayout}>
           <img src={data.image} alt="image" className={styles.cardimage} style={{borderRadius:`${border}`}}/>
           <div className={styles.carddatalayout}>
-            <img src={(data.vegan == 'yes') ? '/Recommends/veg.jpg' : '/Recommends/nonveg.jpg'} alt='category' className={styles.cat} />
+            {data.vegan?<img src={(data.vegan == 'yes') ? '/Recommends/veg.jpg' : '/Recommends/nonveg.jpg'} alt='category' className={styles.cat} />:null}
             <h4 style={{marginTop:'2px'}}>{data.title}</h4>
             <h6 style={{marginTop:'2px'}}>{data.serving}</h6>
             {data.description&&<h5 style={{marginTop:'2px'}}>{data.description}</h5>}

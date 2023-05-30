@@ -1,16 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit"
 import bestsellerdata from "@/Data/Bestsellerdata"
-import drinksdata from "@/Data/DrinksData";
+import foodsdata from "@/Data/FoodData"
 export const FoodSlice = createSlice({
   name: 'food',
   initialState: {
-    food:drinksdata
+    food:foodsdata
   },
   reducers: {
     Filterfooddata: (state, action) => {
         // console.log(action);
         const key = action.payload
-        state.food = drinksdata.filter((food) => food.type === key);
+        state.food = foodsdata.filter((food) => food.type === key);
       },
   }
 })

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Orderpagestyle/Drinks.module.scss'
 import { ControlOutlined } from '@ant-design/icons'
 import { Filterfooddata, GetFoodData } from '@/Components/slice/FoodsSlice'
@@ -8,15 +8,12 @@ import ItemCard from '../Common/Itemcard/ItemCard'
 const Foods = () => {
 //   console.log(Foodsdata);
   const Foods = useSelector(GetFoodData);
-  console.log(Foods);
+  const [selectedFilter, setSelectedFilter] = useState(null);
   const dispatch = useDispatch();
   function filter(value){
        dispatch(Filterfooddata(value));
-    //    console.log(Foods)
+       setSelectedFilter(value);
   }
-  useEffect(() => {
-    console.log(Foods);
-  }, [Foods]);
   function Page(){
     return(
       <div className={style.drinkcardlist}>
@@ -29,52 +26,52 @@ const Foods = () => {
     )
   }
   return (
-    <div className={style.drinks}>
-      <div className={style.drinksfilter}>
-       <div className={style.drinksfiltersub}>
-         <div><ControlOutlined/></div>
-         <div onClick={()=>filter('black')}>
-            <h4>Black</h4>
-         </div>
-         <div onClick={()=>filter('blended')}>
-            <h4>Blended</h4>
-         </div>
-         <div onClick={()=>filter('brew')}>
-            <h4>Brew</h4>
-         </div>
-         <div onClick={()=>filter('caffeine free')}>
-            <h4>Caffeine Free</h4>
-         </div>
-         <div onClick={()=>filter('cold')}>
-            <h4>Cold</h4>
-         </div>
-         <div onClick={()=>filter('cream')}>
-            <h4>Cream</h4>
-         </div>
-         <div onClick={()=>filter('hot')}>
-            <h4>Hot</h4>
-         </div>
-         <div onClick={()=>filter('ice cream')}>
-            <h4>IceCream</h4>
-         </div>
-         <div onClick={()=>filter('juice')}>
-            <h4>Juice</h4>
-         </div>
-         <div onClick={()=>filter('milkshake')}>
-            <h4>Milkshake</h4>
-         </div>
-         <div onClick={()=>filter('nitro')}>
-            <h4>Nitro</h4>
-         </div>
-         <div onClick={()=>filter('on tap')}>
-            <h4>On Tap</h4>
-         </div>
+   <div className={style.drinks}>
+   <div className={style.drinksfilter}>
+     <div className={style.drinksfiltersub}>
+       <div><ControlOutlined /></div>
+       <div
+         onClick={() => filter('veg')}
+         className={selectedFilter === 'veg' ? style.selected : style.notselected} // Add the 'selected' class if it's the currently selected filter
+       >
+         <h4>veg</h4>
        </div>
+       <div
+         onClick={() => filter('non veg')}
+         className={selectedFilter === 'non veg' ? style.selected : style.notselected} // Add the 'selected' class if it's the currently selected filter
+       >
+         <h4>non veg</h4>
        </div>
-       <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
-            <Page/>
-         </div>
-    </div>
+       <div
+         onClick={() => filter('contains egg')}
+         className={selectedFilter === 'contains egg' ? style.selected : style.notselected} // Add the 'selected' class if it's the currently selected filter
+       >
+         <h4>contains egg</h4>
+       </div>
+       <div
+         onClick={() => filter('spicy')}
+         className={selectedFilter === 'spicy' ? style.selected : style.notselected} // Add the 'selected' class if it's the currently selected filter
+       >
+         <h4>spicy</h4>
+       </div>
+       <div
+         onClick={() => filter('sweet')}
+         className={selectedFilter === 'sweet' ? style.selected : style.notselected} // Add the 'selected' class if it's the currently selected filter
+       >
+         <h4>sweet</h4>
+       </div>
+       <div
+         onClick={() => filter('healthy')}
+         className={selectedFilter === 'healthy' ? style.selected : style.notselected} // Add the 'selected' class if it's the currently selected filter
+       >
+         <h4>healthy</h4>
+       </div>
+     </div>
+   </div>
+   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+     <Page />
+   </div>
+ </div>
   )
 }
 
