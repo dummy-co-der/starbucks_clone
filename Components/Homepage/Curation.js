@@ -2,8 +2,8 @@ import Bestseller from '../../public/Curations/Bestseller.jpg'
 import Drinks from '../../public/Curations/Drinks.jpg'
 import Food from '../../public/Curations/Food.jpg'
 import Merchandise from '../../public/Curations/Merchandise.jpg'
-import CoffeeatHome from '../../public/Curations/Coffee At Home.jpg'
-import ReadytoEat from '../../public/Curations/Ready to Eat.jpg'
+import CoffeeAtHome from '../../public/Curations/CoffeeAtHome.jpg'
+import ReadyToEat from '../../public/Curations/ReadytoEat.jpg'
 import Image from 'next/image'
 import styles from './Homepagestyle/Curation.module.scss'
 
@@ -30,11 +30,11 @@ export const Curation = () => {
             <h5 class={styles.curations__items__item__itemtitle}>Merchandise</h5>
           </div>
           <div class={styles.curations__items__item}>
-            <Image src={CoffeeatHome} alt="Coffee at Home" width={100} height={100} class={styles.curations__items__item__itemimg} />
+            <Image src={CoffeeAtHome} alt="Coffee at Home" width={100} height={100} class={styles.curations__items__item__itemimg} />
             <h5 class={styles.curations__items__item__itemtitle}>Coffee At Home</h5>
           </div>
           <div class={styles.curations__items__item}>
-            <Image src={ReadytoEat} alt="ready to eat" width={100} height={100} class={styles.curations__items__item__itemimg} />
+            <Image src={ReadyToEat} alt="ready to eat" width={100} height={100} class={styles.curations__items__item__itemimg} />
             <h5 class={styles.curations__items__item__itemtitle}>Ready To Eat</h5>
           </div>
         </div>
