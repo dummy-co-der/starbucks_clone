@@ -11,7 +11,7 @@ const BestSeller = () => {
         <h4>Everyone's favorite Starbucks put together in a specially curated collection.</h4>
         <div className={style.orderpagedata}>
           {bestsellerdata.map((data, index) => (
-            <div className={style.card}>
+            <div key = {index} className={style.card}>
              <ItemCard data={data} border='50%'/>
              </div>
           ))}

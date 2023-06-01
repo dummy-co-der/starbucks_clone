@@ -1,12 +1,18 @@
-import Image from 'next/image'
-import logo from '../../../public/starbucks.png'
-import { Button, Modal, Input, Space, Avatar } from 'antd'
-import { useState } from 'react'
-import styles from './Navbar.module.scss'
-import { SearchOutlined, ShoppingCartOutlined, UserOutlined } from '@ant-design/icons'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-
+import Image from "next/image";
+import logo from "../../../public/starbucks.png";
+import { Button, Modal, Input, Space, Avatar } from "antd";
+import { useState } from "react";
+import styles from "./Navbar.module.scss";
+import {
+  SearchOutlined,
+  ShoppingCartOutlined,
+  UserOutlined,
+} from "@ant-design/icons";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { GetCartData } from "@/Components/slice/CartSlice";
+import { useSelector } from "react-redux";
+import Cartdataitems from "./Cartdataitems";
 export default function Navbar() {
   const CloseButton = ({ onClick }) => (
     <h5 style={{ color: "#00754a" }} onClick={handleCancel}>
@@ -14,7 +20,9 @@ export default function Navbar() {
     </h5>
   );
   const router = useRouter();
-  const [activeLink,setActiveLink ] = useState((router.asPath.split('/')[1]!='')?router.asPath.split('/')[1]:'home');
+  const [activeLink, setActiveLink] = useState(
+    router.asPath.split("/")[1] != "" ? router.asPath.split("/")[1] : "home"
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     console.log("Modal opened");
@@ -26,6 +34,31 @@ export default function Navbar() {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  const [setCart, setCartOpen] = useState(false);
+  function openCart() {
+    setCartOpen(!setCart);
+  }
+  const cartData = useSelector(GetCartData);
+  const itemsinCart = cartData.counters;
+  const Data = cartData.data;
+  console.log(Data);
+// function Cartdataitems(){
+//   let totalCost = 0;
+//  {Object.entries(Data).map(([key, value], index) => {
+//   const { title, price } = value.data;
+//   const itemCost = price * value.counter;
+//   totalCost += itemCost;
+//   return (
+//     <div className={styles.cartdatastyle} key={index}>
+//       <div>{title}</div>
+//       <div>Quantity: {value.counter}</div>
+//       <div>Item Cost: {itemCost}</div>
+//     </div>
+//   );
+// })}
+
+// <div>Total Cost: {totalCost}</div>
+//   }
   return (
     <>
       <div className={styles.navbarcontainer}>
@@ -37,7 +70,9 @@ export default function Navbar() {
             <div className={styles.options}>
               <Link
                 href="/home"
-                className={`${styles.link} ${activeLink === "home" ? styles.active : ""}`}
+                className={`${styles.link} ${
+                  activeLink === "home" ? styles.active : ""
+                }`}
                 // onClick={() => setActiveLink("home")}
               >
                 <div>
@@ -46,7 +81,9 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/gift"
-                className={`${styles.link} ${activeLink === "gift" ? styles.active : ""}`}
+                className={`${styles.link} ${
+                  activeLink === "gift" ? styles.active : ""
+                }`}
                 // onClick={() => setActiveLink("gift")}
               >
                 <div>
@@ -55,7 +92,9 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/order"
-                className={`${styles.link} ${activeLink === "order" ? styles.active : ""}`}
+                className={`${styles.link} ${
+                  activeLink === "order" ? styles.active : ""
+                }`}
                 onClick={() => setActiveLink("order")}
               >
                 <div>
@@ -67,7 +106,9 @@ export default function Navbar() {
               </div>
               <Link
                 href="/store"
-                className={`${styles.link} ${activeLink === "store" ? styles.active : ""}`}
+                className={`${styles.link} ${
+                  activeLink === "store" ? styles.active : ""
+                }`}
                 onClick={() => setActiveLink("store")}
               >
                 <div>
@@ -87,16 +128,26 @@ export default function Navbar() {
             </Space.Compact>
           </div>
           <div className={styles.user}>
-          <Link
-                href="/profile">
-            <Avatar
-              style={{ border: "2px solid #1e3933", backgroundColor: "white", cursor: 'pointer' }}
-              size={35}
-              icon={<UserOutlined style={{ color: "#1e3933" }} />}
-            />
+            <Link href="/profile">
+              <Avatar
+                style={{
+                  border: "2px solid #1e3933",
+                  backgroundColor: "white",
+                  cursor: "pointer",
+                }}
+                size={35}
+                icon={<UserOutlined style={{ color: "#1e3933" }} />}
+              />
             </Link>
+
             <div className={styles.cart}>
-            <ShoppingCartOutlined />
+              <div className={styles.cartCircle}>{itemsinCart}</div>
+              <div className={styles.cartIcon}>
+                <ShoppingCartOutlined
+                  onClick={() => openCart()}
+                  style={{ fontSize: "34px", color: "green" }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -127,6 +178,12 @@ export default function Navbar() {
           </div>
         </form>
       </Modal>
+      {
+              setCart&&<div className={styles.cartdrawer}>
+                <h4>This is the cart drawer</h4>
+                <Cartdataitems Data={Data}/>
+              </div>
+            }
     </>
   );
 }
