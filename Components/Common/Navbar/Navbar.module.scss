@@ -116,7 +116,41 @@
     padding-left: 10px;
     color:$primary-color;
 }
-
+.cartCircle {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+//   top: 50%;
+//   left: 50%;
+  margin-left: 30px;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 0.5rem;
+  }
+  
+  .cartIcon {
+    display: flex;
+    align-items: center;
+  }
+  .cartdrawer{
+  position: fixed;
+  right: 0;
+  width:400px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 9999;
+  }
+  .cartdatastyle{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 //class="mb-3 xl:w-96"
 //class="input-group relative flex items-stretch w-full mb-4 flex-row"
 //"btn inline-block px-6 py-2.5 bg-[#1e3932] text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center ml-10"
