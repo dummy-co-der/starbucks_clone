@@ -1,25 +1,29 @@
-@import '../../Color.scss';
-.filterbackground{
-    background-color: $filter-color;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+@import "../../Color.scss";
+
+.filterbackground {
+  background-color: $filter-color;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
-.filtercontent{
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
+
+.filtercontent {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
 }
-.selected{
+
+.selected {
+  text-decoration: underline $secondary-color 2px;
+  text-underline-position: under;
+  text-underline-offset: 4px;
+}
+
+.filterdata {
+  cursor: pointer;
+  :hover {
     text-decoration: underline $secondary-color 2px;
     text-underline-position: under;
     text-underline-offset: 4px;
-}
-.filterdata{
-    cursor: pointer;
-    :hover{
-        text-decoration: underline $secondary-color 2px;
-        text-underline-position: under;
-        text-underline-offset: 4px;
-    }
+  }
 }

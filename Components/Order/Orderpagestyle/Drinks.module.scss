@@ -1,68 +1,74 @@
-@import '../../Color.scss';
-.drinksfiltersub{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width:80%;
-    font-weight:0%;
+@import "../../Color.scss";
+
+.drinksfiltersub {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  font-weight: 0%;
 }
-.drinksfilter{
-    width: 100%;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.drinksfilter {
+  width: 100%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.drinks{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+
+.drinks {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-.drinkcardlist{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-    width: 85%;
+
+.drinkcardlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  width: 85%;
 }
+
 .drinkcard {
-    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
-    border-radius: 12px;
-    // width: calc(33.33% - 24px);
-    width: 45%;
-    margin: 12px;
-    
-    @media (max-width: 767px) {
-      width: 100%;
-    }
-    
-    &:hover {
-      box-shadow: 0 4px 8px #00000024, 0 8px 10px #0000001f, 0 1px 10px #0000003a, 0 16px 24px -16px rgba(0, 0, 0, 0.8);
-    }
+  box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+  border-radius: 12px;
+  width: 45%;
+  margin: 12px;
+
+  @media (max-width: 767px) {
+    width: 100%;
   }
-  .selected{
-    
-    height:35px;
-    width:100%;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    background-color: #198754;
-    color:white;
+
+  &:hover {
+    box-shadow: 0 4px 8px #00000024, 0 8px 10px #0000001f, 0 1px 10px #0000003a,
+      0 16px 24px -16px rgba(0, 0, 0, 0.8);
   }
-  .notselected{
-    height:35px;
-    border-radius: 12px;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    cursor: pointer;
-    background-color: #ebebeb;
-  }
+}
+
+.selected {
+  height: 35px;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: #198754;
+  color: white;
+}
+
+.notselected {
+  height: 35px;
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+  background-color: #ebebeb;
+}

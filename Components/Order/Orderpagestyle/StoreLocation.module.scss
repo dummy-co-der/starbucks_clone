@@ -1,79 +1,86 @@
-@import '../../Color.scss';
+@import "../../Color.scss";
 
-.storediv{
-    width:100%;
-    background-color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
+.storediv {
+  width: 100%;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
 }
-.storesubdiv{
-    display:flex;
-    padding: 15px 0px;
-    justify-content: space-between;
-    width: 70%;
-    align-items: center;
-    flex-direction: row;
-    // padding: 5rem 0;
+
+.storesubdiv {
+  display: flex;
+  padding: 15px 0px;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+  flex-direction: row;
 }
-.storesearch{
+
+.storesearch {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.inputbase{
-    border-bottom: 10px white;
-}
-.searchbackg{
-    background-color: aliceblue;
-    width: 2.2rem;
-    height: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-right: 0.4rem;
-}
-.notfound{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: $error-color;
-    border-radius: 10px;
 
-    padding: 0.8rem 0.4rem;
-    h4{
-        color:$errortext-color;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 0.2rem;
-        margin-right: 0.2rem;
-        // margin: 0 0.2rem 0.2rem 0.2rem;
-    }
-    h6{
-        width: 90%;
-        margin-top: 0.4rem;
-        margin-bottom: 0.2rem;
-    }
+.inputbase {
+  border-bottom: 10px white;
 }
-.close{
-    color:$errortext-color;
-    cursor: pointer;
+
+.searchbackg {
+  background-color: aliceblue;
+  width: 2.2rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 0.4rem;
 }
-.clock{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: white;
+
+.notfound {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $error-color;
+  border-radius: 10px;
+
+  padding: 0.8rem 0.4rem;
+  h4 {
+    color: $errortext-color;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 0.2rem;
+    margin-right: 0.2rem;
+  }
+  h6 {
+    width: 90%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+  }
 }
-.clocklogo{
-    padding-right: 0.4rem;
+
+.close {
+  color: $errortext-color;
+  cursor: pointer;
 }
-.image{
-    width:20px;
-    height: 20px;
+
+.clock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 0.2rem;
+}
+
+.clocklogo {
+  padding-right: 0.4rem;
+}
+
+.image {
+  width: 20px;
+  height: 20px;
 }

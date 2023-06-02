@@ -1,16 +1,15 @@
 @import "/Components/Color.scss";
 
 .banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: $primary-color;
-    margin-top:60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+  margin-top: 60px;
 }
 
 .bannersub {
-    width: 60%;
-    color: $bg-color;
+  width: 60%;
+  color: $bg-color;
 }
-

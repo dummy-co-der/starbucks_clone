@@ -1,44 +1,44 @@
-@import '../../Color.scss';
+@import "../../Color.scss";
 
 .aboutus_content {
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 2%;
 }
 
 .a_heading {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .a_subheading {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .a_quote {
-    margin-bottom: 1rem;
-    font-weight: bold;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .aboutus_content p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .aboutcard {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-    margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
 }
 
 .card {
-    width: 48%;
-    height: 30%;
-    margin-bottom: 5%;
+  width: 48%;
+  height: 30%;
+  margin-bottom: 5%;
 }

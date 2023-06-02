@@ -1,32 +1,31 @@
 .typewriter-wrapper {
-    display: inline-block;
-    font-size: 50px;
-    color: #00754a;
+  display: inline-block;
+  font-size: 50px;
+  color: #00754a;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
+
+.typewriter-string {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 124px;
+  color: #00754a;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
   }
-  
-  .typewriter-cursor {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 4px;
-    animation: blink 0.7s infinite;
+  50% {
+    opacity: 1;
   }
-  
-  .typewriter-string {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 124px;
-    color: #00754a;
+  100% {
+    opacity: 0;
   }
-  
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  
+}

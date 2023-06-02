@@ -1,6 +1,7 @@
-import React from 'react';
-import styles from './Navbar.module.scss'; 
-function Cartdataitems({ Data }) { 
+import React from "react";
+import styles from "./Navbar.module.scss";
+
+function Cartdataitems({ Data }) {
   let totalCost = 0;
   return (
     <div>

@@ -1,91 +1,91 @@
-@import '../../Color.scss';
+@import "../../Color.scss";
 
 .g_banner {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
 }
 
 .g_content {
-    background-color: $primary-color;
+  background-color: $primary-color;
 }
 
 .g_card {
-    position: relative;
+  position: relative;
 }
 
 .g_card_background {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-    height: 80%;
-    padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 80%;
+  padding: 2rem 0;
 }
 
 .g_card_content {
-    position: absolute;
-    top: 15%;
-    left: 20%;
+  position: absolute;
+  top: 15%;
+  left: 20%;
 }
 
 .bannerButton {
-    position: absolute;
-    top: 75%;
-    left: 83%;
-    border-radius: 16px;
-    color: white;
-    background-color: $secondary-color !important;
-    border-color: $secondary-color !important;
+  position: absolute;
+  top: 75%;
+  left: 83%;
+  border-radius: 16px;
+  color: white;
+  background-color: $secondary-color !important;
+  border-color: $secondary-color !important;
 }
 
 .g_tab {
-    background-color: #f2f0eb;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  background-color: #f2f0eb;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .g_tab_list {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  cursor: pointer;
 }
 
 .tab_item1 {
-    padding-left: 95px;
-    padding-right: 35px;
-    border-right: 1px solid gray;
+  padding-left: 95px;
+  padding-right: 35px;
+  border-right: 1px solid gray;
 }
 
 .tab_item2 {
-    padding-left: 35px;
-    padding-right: 35px;
-    border-right: 1px solid gray;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-right: 1px solid gray;
 }
 
 .tab_item3 {
-    padding-left: 35px;
+  padding-left: 35px;
 }
 
 .link {
-    color: gray;
-    text-decoration: none;
-    margin: 0;
+  color: gray;
+  text-decoration: none;
+  margin: 0;
 }
 
 .link:hover {
-    text-decoration: underline $secondary-color 2px;
-    transition: text-decoration 0.25s ease-in-out;
-    text-underline-position: under;
-    text-underline-offset: 19px;
+  text-decoration: underline $secondary-color 2px;
+  transition: text-decoration 0.25s ease-in-out;
+  text-underline-position: under;
+  text-underline-offset: 19px;
 }
 
 .active {
-    text-decoration: underline $secondary-color 2px;
-    text-underline-position: under;
-    text-underline-offset: 19px;
+  text-decoration: underline $secondary-color 2px;
+  text-underline-position: under;
+  text-underline-offset: 19px;
 }

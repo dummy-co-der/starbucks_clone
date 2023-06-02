@@ -1,21 +1,25 @@
-@import '../../Color.scss';
-.sliderbanner{
-    width:100%;
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+@import "../../Color.scss";
+
+.sliderbanner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
-.sliderbannercard{
-    background-color:$bg-color;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+
+.sliderbannercard {
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-.sliders{
-    width:90%;
-    margin:auto;
+
+.sliders {
+  width: 90%;
+  margin: auto;
 }
-.slick-slider{
-    width:500px !important;
+
+.slick-slider {
+  width: 500px !important;
 }
