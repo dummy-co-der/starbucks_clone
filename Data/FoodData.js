@@ -1,6 +1,6 @@
 const foodsdata = [
   {
-    image: "Recommends/product1.jpg",
+    image: "Food-images/product1.jpg",
     type: "non veg",
     vegan: "no",
     title: "Chilli Cheese Toast",
@@ -10,7 +10,7 @@ const foodsdata = [
     price: "346.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Food-images/product2.jpg",
     type: "non veg",
     vegan: "no",
     title: "Tomato Basil Bruschetta",
@@ -20,7 +20,7 @@ const foodsdata = [
     price: "336.25",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product3.jpg",
     type: "contains egg",
     vegan: "yes",
     title: "Vegan Sausage Croissant Roll",
@@ -30,7 +30,7 @@ const foodsdata = [
     price: "388.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Food-images/product4.jpg",
     type: "spicy",
     vegan: "no",
     title: "Vegan Croissant Bun",
@@ -40,7 +40,7 @@ const foodsdata = [
     price: "194.25",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product5.jpg",
     type: "spicy",
     vegan: "yes",
     title: "Vegan Hummus Kebab Wrap",
@@ -50,7 +50,7 @@ const foodsdata = [
     price: "369.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Food-images/product6.jpg",
     type: "spicy",
     vegan: "no",
     title: "Butter Croissant",
@@ -59,7 +59,7 @@ const foodsdata = [
     price: "194.25",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product7.jpg",
     type: "sweet",
     vegan: "yes",
     title: "Tandoori Chicken Panini Sandwich",
@@ -69,7 +69,7 @@ const foodsdata = [
     price: "414.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product8.jpg",
     type: "sweet",
     vegan: "no",
     title: "Chatpata Paratha Wrap",
@@ -79,7 +79,7 @@ const foodsdata = [
     price: "367.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Food-images/product9.jpg",
     vegan: "healthy",
     type: "cold",
     title: "Murgh Kathi Wrap",
@@ -89,7 +89,7 @@ const foodsdata = [
     price: "346.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product10.jpg",
     type: "healthy",
     vegan: "yes",
     title: "Herbed Chicken Focaccia Sandwich",
@@ -99,7 +99,7 @@ const foodsdata = [
     price: "367.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product11.jpg",
     type: "healthy",
     vegan: "yes",
     title: "Herbed Chicken Focaccia Sandwich",
@@ -109,7 +109,7 @@ const foodsdata = [
     price: "367.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product12.jpg",
     type: "contains egg",
     vegan: "yes",
     title: "Spiced Paneer Sandwich in Focaccia",
@@ -119,7 +119,7 @@ const foodsdata = [
     price: "367.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Food-images/product1.jpg",
     type: "contains egg",
     vegan: "no",
     title: "Pesto & Mozzarella Sandwich in Panini",
@@ -129,7 +129,7 @@ const foodsdata = [
     price: "194.25",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product3.jpg",
     type: "veg",
     vegan: "yes",
     title: "Herbed Chicken Focaccia Sandwich",
@@ -139,7 +139,7 @@ const foodsdata = [
     price: "367.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Food-images/product2.jpg",
     type: "veg",
     vegan: "yes",
     title: "Spiced Paneer Sandwich in Focaccia",

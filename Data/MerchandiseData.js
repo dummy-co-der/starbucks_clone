@@ -1,6 +1,6 @@
 const merchandisedata = [
   {
-    image: "Recommends/product1.jpg",
+    image: "Merchandise-images/product1.jpg",
     type: "mugs",
     title: "Ceramic Pink and White Mug - 295ml",
     description:
@@ -8,7 +8,7 @@ const merchandisedata = [
     price: "1500.50",
   },
   {
-    image: "Recommends/product1.jpg",
+    image: "Merchandise-images/product2.jpg",
     type: "mugs",
     title: "Savannah Animals Mug - 295ml",
     description:
@@ -16,7 +16,7 @@ const merchandisedata = [
     price: "2190.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Merchandise-images/product3.jpg",
     type: "mugs",
     title: "Mint Blue Coral Reef Ceramic Mug (89 Ml)",
     description:
@@ -24,7 +24,7 @@ const merchandisedata = [
     price: "1336.25",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product4.jpg",
     type: "mugs",
     title: "Siren On Coral Reef Ceramic Mug (355 Ml)",
     description:
@@ -32,7 +32,7 @@ const merchandisedata = [
     price: "1788.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Merchandise-images/product5.jpg",
     type: "cups",
     title: "Bling Yellow Cold Cup -709ml",
     description:
@@ -40,7 +40,7 @@ const merchandisedata = [
     price: "2200.25",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product6.jpg",
     type: "cups",
     title: "Black Stainless Steel Cold Cup (473 Ml)",
     description:
@@ -48,7 +48,7 @@ const merchandisedata = [
     price: "2000.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Merchandise-images/product7.jpg",
     type: "cups",
     title: "Color Changing Coral Wreath Resuable Hot Cup ...",
     description:
@@ -56,7 +56,7 @@ const merchandisedata = [
     price: "604.25",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product8.jpg",
     type: "cups",
     title: "Green Cold Useable Cup Cup (710 Ml)",
     description:
@@ -64,7 +64,7 @@ const merchandisedata = [
     price: "414.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product9.jpg",
     type: "tumblers",
     title: "Scatter Savannah Animals Tumbler - 473ml",
     description:
@@ -72,7 +72,7 @@ const merchandisedata = [
     price: "1750.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Merchandise-images/product10.jpg",
     type: "tumblers",
     title: "Green Siren Stainless Steel Tumbler (473 Ml)",
     description:
@@ -80,7 +80,7 @@ const merchandisedata = [
     price: "2600.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product11.jpg",
     type: "tumblers",
     title: "Gradient Blue Stainless Steel Tumbler (473 Ml...",
     description:
@@ -88,7 +88,7 @@ const merchandisedata = [
     price: "1367.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product12.jpg",
     type: "tumblers",
     title: "Create Your Own Tumbler (473 Ml)",
     description:
@@ -96,7 +96,7 @@ const merchandisedata = [
     price: "3167.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product13.jpg",
     type: "water bottles",
     title: "Cherry Blossom Moon Water Bottle - 384ml",
     description:
@@ -104,7 +104,7 @@ const merchandisedata = [
     price: "2807.50",
   },
   {
-    image: "Recommends/product2.jpg",
+    image: "Merchandise-images/product14.jpg",
     type: "water bottles",
     title: "Elephant and Giraffe Waterbottle - 590 ml",
     description:
@@ -112,7 +112,7 @@ const merchandisedata = [
     price: "3550.25",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product15.jpg",
     type: "water bottles",
     title: "Wordmark Green Stainless Steel Water Bottle (...",
     description:
@@ -120,7 +120,7 @@ const merchandisedata = [
     price: "2567.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product16.jpg",
     type: "water bottles",
     title: "Green Cherry Leaf Stainless Steel Water Bottl...",
     description:
@@ -128,14 +128,14 @@ const merchandisedata = [
     price: "2200.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product17.jpg",
     type: "stationary",
     title: "Set Of 3 Starbucks Notebooks",
     description: "Notebooks with Starbucks branding.",
     price: "925.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product18.jpg",
     type: "stationary",
     title: "Starbucks Bearista Pen",
     description:
@@ -143,7 +143,7 @@ const merchandisedata = [
     price: "300.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product19.jpg",
     type: "stationary",
     title: "Starbucks Bearista Pen",
     description:
@@ -151,14 +151,14 @@ const merchandisedata = [
     price: "300.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product20.jpg",
     type: "accessories",
     title: "Starbucks Set Of 4 Brown Coasters",
     description: "Style your home with a unique set of Starbucks coasters",
     price: "700.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product21.jpg",
     type: "accessories",
     title: "Starbucks Bearista Keychain",
     description:
@@ -166,7 +166,7 @@ const merchandisedata = [
     price: "350.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product22.jpg",
     type: "accessories",
     title: "Starbucks Crossbody Bag",
     description:
@@ -174,7 +174,7 @@ const merchandisedata = [
     price: "1300.50",
   },
   {
-    image: "Recommends/product3.jpg",
+    image: "Merchandise-images/product23.jpg",
     type: "accessories",
     title: "Starbucks Cup Clip",
     description:

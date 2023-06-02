@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import style from "./Orderpagestyle/Drinks.module.scss";
 import { ControlOutlined } from "@ant-design/icons";
 import { Filtercoffeedata, GetCoffeeData } from "../slice/CoffeeSlice";
