@@ -1,20 +1,19 @@
-import { createSlice } from "@reduxjs/toolkit"
-import bestsellerdata from "@/Data/Bestsellerdata"
+import { createSlice } from "@reduxjs/toolkit";
+import bestsellerdata from "@/Data/Bestsellerdata";
 import drinksdata from "@/Data/DrinksData";
 export const DrinkSlice = createSlice({
-  name: 'drink',
+  name: "drink",
   initialState: {
-    drinks:drinksdata
+    drinks: drinksdata,
   },
   reducers: {
     Filterdata: (state, action) => {
-        // console.log(action);
-        const key = action.payload
-        state.drinks = drinksdata.filter((drink) => drink.type === key);
-      },
-  }
-})
+      const key = action.payload;
+      state.drinks = drinksdata.filter((drink) => drink.type === key);
+    },
+  },
+});
 
 export const { Filterdata } = DrinkSlice.actions;
-export const GetDrinksData = state=>state.drink.drinks;
-export default DrinkSlice.reducer
+export const GetDrinksData = (state) => state.drink.drinks;
+export default DrinkSlice.reducer;

@@ -1,13 +1,13 @@
-import React from 'react'
-import Aboutus from '@/Components/Aboutuspage/Aboutus'
-import Layout from '../Components/Layout'
+import React from "react";
+import Aboutus from "@/Components/Aboutuspage/Aboutus";
+import Layout from "../Components/Layout";
 
 const Aboutuspage = () => {
   return (
-      <Layout>
-        <Aboutus />
-      </Layout>
-  )
-}
+    <Layout>
+      <Aboutus />
+    </Layout>
+  );
+};
 
-export default Aboutuspage
+export default Aboutuspage;

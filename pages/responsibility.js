@@ -1,13 +1,13 @@
-import React from 'react'
-import Responsibility from '@/Components/Responsibilitypage/Responsibility'
-import Layout from '../Components/Layout'
+import React from "react";
+import Responsibility from "@/Components/Responsibilitypage/Responsibility";
+import Layout from "../Components/Layout";
 
 const Responsibilitypage = () => {
   return (
-      <Layout>
-        <Responsibility />
-      </Layout>
-  )
-}
+    <Layout>
+      <Responsibility />
+    </Layout>
+  );
+};
 
-export default Responsibilitypage
+export default Responsibilitypage;

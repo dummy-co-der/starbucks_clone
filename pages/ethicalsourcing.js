@@ -1,13 +1,13 @@
-import React from 'react'
-import Ethicalsourcing from '@/Components/Ethicalsourcingpage/Ethicalsourcing'
-import Layout from '../Components/Layout'
+import React from "react";
+import Ethicalsourcing from "@/Components/Ethicalsourcingpage/Ethicalsourcing";
+import Layout from "../Components/Layout";
 
 const Ethicalsourcingpage = () => {
   return (
-      <Layout>
-        <Ethicalsourcing />
-      </Layout>
-  )
-}
+    <Layout>
+      <Ethicalsourcing />
+    </Layout>
+  );
+};
 
-export default Ethicalsourcingpage
+export default Ethicalsourcingpage;

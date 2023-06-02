@@ -1,5 +1,5 @@
-import styles from './Homepagestyle/Recommend.module.scss'
-import RecommendList from './RecommendList'
+import styles from "./Homepagestyle/Recommend.module.scss";
+import RecommendList from "./RecommendList";
 
 const Recommend = () => {
   return (
@@ -8,13 +8,12 @@ const Recommend = () => {
         <h2 className={styles.title}>Barista Recommends</h2>
         <div className={styles.action}>
           <h2 className={styles.menu}>View Menu</h2>
-          <div className={styles.image}>
-          </div>
+          <div className={styles.image}></div>
         </div>
       </div>
       <RecommendList />
     </div>
-  )
-}
+  );
+};
 
-export default Recommend
+export default Recommend;

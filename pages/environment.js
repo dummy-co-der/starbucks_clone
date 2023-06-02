@@ -1,13 +1,13 @@
-import React from 'react'
-import Environment from '@/Components/Environmentpage/Environment'
-import Layout from '../Components/Layout'
+import React from "react";
+import Environment from "@/Components/Environmentpage/Environment";
+import Layout from "../Components/Layout";
 
 const Environmentpage = () => {
   return (
-      <Layout>
-        <Environment />
-      </Layout>
-  )
-}
+    <Layout>
+      <Environment />
+    </Layout>
+  );
+};
 
-export default Environmentpage
+export default Environmentpage;

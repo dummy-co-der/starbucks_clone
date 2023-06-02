@@ -1,69 +1,71 @@
-@import '/Components/Color.scss';
+@import "/Components/Color.scss";
 
 .card {
-    background-color: $bg-color;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 12px;
-    margin: 10px;
-    width: 30%;
+  background-color: $bg-color;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  margin: 10px;
+  width: 30%;
 }
 
 .cardsub {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    height: 150px;
-    margin-left: 50px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  margin-left: 50px;
 }
 
 .cardlayout {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .carddatalayout {
-    margin-top: -40px;
-    margin-left: 15px;
+  margin-top: -40px;
+  margin-left: 15px;
 }
 
 .carddatalayout p {
-    margin-top: -20px;
+  margin-top: -20px;
 }
 
 .cardimage {
-    border-radius: 12px;
-    margin-top: -15px;
-    margin-left: -55px;
-    width: 100%;
-    cursor: pointer;
-    filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, .07)) drop-shadow(0px 1px 18px rgba(0, 0, 0, .06)) drop-shadow(0px 3px 5px rgba(0, 0, 0, .1));
+  border-radius: 12px;
+  margin-top: -15px;
+  margin-left: -55px;
+  width: 100%;
+  cursor: pointer;
+  filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.07))
+    drop-shadow(0px 1px 18px rgba(0, 0, 0, 0.06))
+    drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
 }
 
 .carddatasublayout {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .additembtn {
-    background-color: $secondary-color;
-    color: white;
-    border-radius: 15px;
-    left: 130px;
-    top: -25px;
+  background-color: $secondary-color;
+  color: white;
+  border-radius: 15px;
+  left: 130px;
+  top: -25px;
 
-    :hover {
-        color: aliceblue !important;
-    }
+  :hover {
+    color: aliceblue !important;
+  }
 }
 
 .ant-btn:not(:disabled):hover {
-    color: inherit;
-    background-color: inherit;
-    border-color: inherit;
+  color: inherit;
+  background-color: inherit;
+  border-color: inherit;
 }

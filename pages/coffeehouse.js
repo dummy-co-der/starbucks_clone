@@ -1,13 +1,13 @@
-import React from 'react'
-import Coffeehouse from '@/Components/Coffeehousepage/Coffeehouse'
-import Layout from '../Components/Layout'
+import React from "react";
+import Coffeehouse from "@/Components/Coffeehousepage/Coffeehouse";
+import Layout from "../Components/Layout";
 
 const Coffeehousepage = () => {
   return (
-      <Layout>
-        <Coffeehouse />
-      </Layout>
-  )
-}
+    <Layout>
+      <Coffeehouse />
+    </Layout>
+  );
+};
 
-export default Coffeehousepage
+export default Coffeehousepage;
