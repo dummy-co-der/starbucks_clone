@@ -8,7 +8,7 @@ const order = () => {
   return (
     <div>
       <Head>
-        <title>Order</title>
+        <title>Starbucks|Order</title>
       </Head>
       <Layout>
         <StoreLocation />

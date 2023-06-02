@@ -8,7 +8,7 @@ const gift = () => {
     <>
       <div>
         <Head>
-          <title>Gift</title>
+          <title>Starbucks|Gift</title>
         </Head>
         <Layout>
           <Banner />

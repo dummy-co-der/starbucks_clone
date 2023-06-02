@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "../../../public/starbucks.png";
 import { Button, Modal, Input, Space, Avatar } from "antd";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.scss";
 import {
   SearchOutlined,
@@ -36,30 +36,27 @@ export default function Navbar() {
     setIsModalOpen(false);
   };
   const [setCart, setCartOpen] = useState(false);
+  const cartRef = useRef(null);
   function openCart() {
     setCartOpen(!setCart);
   }
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (cartRef.current && !cartRef.current.contains(event.target)) {
+        setCartOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   const cartData = useSelector(GetCartData);
   const itemsinCart = cartData.counters;
   const Data = cartData.data;
-  console.log(Data);
-  // function Cartdataitems(){
-  //   let totalCost = 0;
-  //  {Object.entries(Data).map(([key, value], index) => {
-  //   const { title, price } = value.data;
-  //   const itemCost = price * value.counter;
-  //   totalCost += itemCost;
-  //   return (
-  //     <div className={styles.cartdatastyle} key={index}>
-  //       <div>{title}</div>
-  //       <div>Quantity: {value.counter}</div>
-  //       <div>Item Cost: {itemCost}</div>
-  //     </div>
-  //   );
-  // })}
-
-  // <div>Total Cost: {totalCost}</div>
-  //   }
+  // console.log(Data);
+ 
   return (
     <>
       <div className={styles.navbarcontainer}>
@@ -180,8 +177,11 @@ export default function Navbar() {
         </form>
       </Modal>
       {setCart && (
-        <div className={styles.cartdrawer}>
-          <h4>This is the cart drawer</h4>
+        <div ref={cartRef} className={styles.cartdrawer}>
+          <div className={styles.headingcart}>
+          <h3 style={{color:'#00754A'}}>{`Starbucks (${itemsinCart})`}</h3>
+          <button onClick={()=>setCartOpen(false)}className={styles.drawerclosebtn}>X</button>
+          </div>
           <Cartdataitems Data={Data} />
         </div>
       )}

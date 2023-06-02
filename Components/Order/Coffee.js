@@ -55,8 +55,15 @@ const Coffee = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flexDirection:'column',
         }}
       >
+        <div style={{width:'80%'}}>
+        <h3 >Wholebeans</h3>
+        <h4 style={{ fontWeight: 'normal' }}>
+        Exclusive range of coffee beans roasted to perfection.
+        </h4>
+        </div>
         <Page />
       </div>
     </div>

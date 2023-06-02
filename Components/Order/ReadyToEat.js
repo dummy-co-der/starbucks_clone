@@ -56,8 +56,15 @@ const ReadyToEat = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flexDirection:'column',
         }}
       >
+         <div style={{width:'80%'}}>
+        <h3 >Quick Bites</h3>
+        <h4 style={{ fontWeight: 'normal' }}>
+        Starbucks snacks available on the go.
+        </h4>
+        </div>
         <Page />
       </div>
     </div>

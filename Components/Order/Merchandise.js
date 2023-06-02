@@ -97,8 +97,15 @@ const Merchandise = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flexDirection:'column',
         }}
       >
+         <div style={{width:'80%'}}>
+        <h3 >Mugs</h3>
+        <h4 style={{ fontWeight: 'normal' }}>
+        Artistic collection of ceramic mugs with acacia wood lids.
+        </h4>
+        </div>
         <Page />
       </div>
     </div>

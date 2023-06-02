@@ -13,7 +13,7 @@ const Homepage = () => {
     <>
       <div>
         <Head>
-          <title>Starbucks Home</title>
+          <title>Starbucks|Home</title>
         </Head>
         <Layout>
           <Banner />

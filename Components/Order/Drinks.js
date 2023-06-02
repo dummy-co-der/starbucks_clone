@@ -103,8 +103,15 @@ const Drinks = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flexDirection:'column',
         }}
       >
+        <div style={{width:'80%'}}>
+        <h3 >Espresso</h3>
+        <h4 style={{ fontWeight: 'normal' }}>
+        Our smooth signature Espresso Roast with rich flavor and caramelly sweetness is at the very heart of everything we do.
+        </h4>
+        </div>
         <Page />
       </div>
     </div>

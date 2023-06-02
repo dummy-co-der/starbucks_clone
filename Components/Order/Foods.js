@@ -88,8 +88,15 @@ const Foods = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flexDirection:'column',
         }}
       >
+         <div style={{width:'80%'}}>
+        <h3 >Sandwiches and Wrap</h3>
+        <h4 style={{ fontWeight: 'normal' }}>
+        Signature breads made with fresh ingredients and in-house sauces.
+        </h4>
+        </div>
         <Page />
       </div>
     </div>
