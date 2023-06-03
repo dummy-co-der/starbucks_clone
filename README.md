@@ -44,7 +44,7 @@ The Starbucks homepage features an elegant and minimalist design with a prominen
   <img align="center" alt="REACTJS" height="40" width="50" src="https://skillicons.dev/icons?i=nextjs">
   <img align="center" alt="SASS" height="40" width="50" src="https://skillicons.dev/icons?i=sass">
   <img align="center" alt="REDUX" height="40" width="50" src="https://skillicons.dev/icons?i=redux">
-  <img align="center" alt="NODEJS' height="40" width="50" src="https://skillicons.dev/icons?i=nodejs"> 
+  <img align="center" alt="NODEJS" height="40" width="50" src="https://skillicons.dev/icons?i=nodejs"> 
   <img align="center" alt="ANTDESIGN" height="40" width="50" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
  </div>
   
