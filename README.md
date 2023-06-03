@@ -79,6 +79,6 @@ Once your server has started, go to this url `http://localhost:3000/` and you wi
                                                                                                                                       
   ## 🤝 Feedback
   ```
-  - Any feedback or suggestions are highly appreciated, whether it's regarding the format, content, or language used.
+  - Suggestions are highly appreciated, whether it's regarding the format, content, or language used.
   - Email: maheshwarianuj1001@gmail.com or kartikeyrajgupta007@gmail.com
   ```  
