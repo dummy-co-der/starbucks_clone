@@ -74,7 +74,7 @@ const Signup = () => {
         <div className={styles.loginsub}>
         <div className={styles.anim}>
         {/* <div style={{fontSize:'2rem',color:'#fff9ed',margin:'0px'}}><Typewriter/></div> */}
-        <div style={{height:'90vh',paddingBottom:'20px'}}>
+        <div style={{height:'90vh',paddingBottom:'20px',marginRight:'70px'}}>
          <img src= '/Login-images/starbucks.gif' alt='starbucks gif'/>
          </div>
         </div>
