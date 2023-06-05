@@ -1,0 +1,104 @@
+@import '../Color.scss';
+.logindiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loginsub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px;
+    background-color: $primary-color;
+}
+.anim{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff9ed;
+    
+}
+.loginacc{
+    width: 50%;
+    background-color:#fff9ed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+.loginbox{
+    width: 60%;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 6px rgba(30, 57, 51, 0.8);
+    border-radius: 14px;
+}
+.signinbtn{
+    background-color: $secondary-color;
+    color: white;
+    font-weight: 700;
+    width: 50%;
+    margin: 20px 0px;
+}
+.loginboxelements{
+    margin: 10px 0px;
+}
+.loginswitch{
+    width: 65%;
+    display: flex;
+    border: 2px solid $secondary-color;
+    height: 40px;
+    border-radius: 14px;
+    margin-bottom: 8px;
+}
+.loginswitchbtn{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    background-color: #c7c2c2;
+    border-radius: 12px 0px 0px 12px;
+    color:$secondary-color;
+    font-weight: 700;
+    margin: 2px;
+}
+.loginswitchbtnselleft{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    background-color: $secondary-color;
+    color:white;
+    border-radius: 12px 0px 0px 12px;
+    margin: 2px;
+}
+.loginswitchbtnright{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    background-color: #c7c2c2;
+    color:$secondary-color;
+    font-weight: 700;
+    border-radius: 0px 12px 12px 0px;
+    margin: 2px;
+}
+.loginswitchbtnselright{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    background-color: $secondary-color;
+    color:white;
+    border-radius: 0px 12px 12px 0px;
+    margin: 2px;
+}
