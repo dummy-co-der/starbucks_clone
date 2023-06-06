@@ -4,6 +4,7 @@ import { ControlOutlined } from "@ant-design/icons";
 import { Filtercoffeedata, GetCoffeeData } from "../slice/CoffeeSlice";
 import { useDispatch, useSelector } from "react-redux";
 import ItemCard from "../Common/Itemcard/ItemCard";
+import { motion } from "framer-motion";
 const Coffee = () => {
   const coffee = useSelector(GetCoffeeData);
   const [selectedFilter, setSelectedFilter] = useState(null);
@@ -12,13 +13,23 @@ const Coffee = () => {
     dispatch(Filtercoffeedata(value));
     setSelectedFilter(value);
   }
+  const itemVariants = {
+    initial: { scale: 1 },
+    hover: { scale: 1.05 }
+  };
   function Page() {
     return (
       <div className={style.drinkcardlist}>
         {coffee.map((data, index) => (
-          <div className={style.drinkcard}>
+          <motion.div
+          whileHover="hover"
+          className={style.drinkcard}
+          initial="initial"
+          key={index}
+          variants={itemVariants}
+        >
             <ItemCard data={data} border="50%" />
-          </div>
+          </motion.div>
         ))}
       </div>
     );

@@ -2,8 +2,12 @@ import React from "react";
 import style from "./Orderpagestyle/Bestseller.module.scss";
 import bestsellerdata from "@/Data/Bestsellerdata";
 import ItemCard from "../Common/Itemcard/ItemCard";
-
+import { motion } from "framer-motion";
 const BestSeller = () => {
+  const itemVariants = {
+    initial: { scale: 1 },
+    hover: { scale: 1.05 }
+  };
   return (
     <div className={style.bestseller}>
       <div className={style.bestsellersub}>
@@ -14,9 +18,15 @@ const BestSeller = () => {
         </h4>
         <div className={style.orderpagedata}>
           {bestsellerdata.map((data, index) => (
-            <div key={index} className={style.card}>
+             <motion.div
+             whileHover="hover"
+             className={style.card}
+             initial="initial"
+             key={index}
+             variants={itemVariants}
+           >
               <ItemCard data={data} border="50%" />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
