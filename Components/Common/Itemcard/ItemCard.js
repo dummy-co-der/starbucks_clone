@@ -27,9 +27,9 @@ const ItemCard = ({ data, border }) => {
     dispatch(addData(data));
     openNotification();
   }
-
   const datas = useSelector(GetCartData);
   return (
+    
     <div className={styles.card}>
       <div className={styles.cardsub}>
         <div className={styles.cardlayout}>

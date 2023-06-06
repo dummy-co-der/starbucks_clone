@@ -4,7 +4,7 @@ import { ControlOutlined } from "@ant-design/icons";
 import { Filterreadytoeatdata, GetreadytoeatData } from "../slice/ReadyToEat";
 import { useDispatch, useSelector } from "react-redux";
 import ItemCard from "../Common/Itemcard/ItemCard";
-
+import { motion } from "framer-motion";
 const ReadyToEat = () => {
   const [selectedFilter, setSelectedFilter] = useState(null);
   const readytoeat = useSelector(GetreadytoeatData);
@@ -13,13 +13,23 @@ const ReadyToEat = () => {
     dispatch(Filterreadytoeatdata(value));
     setSelectedFilter(value);
   }
+  const itemVariants = {
+    initial: { scale: 1 },
+    hover: { scale: 1.05 }
+  };
   function Page() {
     return (
       <div className={style.drinkcardlist}>
         {readytoeat.map((data, index) => (
-          <div className={style.drinkcard}>
+            <motion.div
+            whileHover="hover"
+            className={style.drinkcard}
+            initial="initial"
+            key={index}
+            variants={itemVariants}
+          >
             <ItemCard data={data} border="50%" />
-          </div>
+          </motion.div>
         ))}
       </div>
     );

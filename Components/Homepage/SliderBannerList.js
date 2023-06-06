@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import SliderBannerData from "@/Data/SliderBannerData";
 import SliderbannerCard from "../Common/SliderBanner/SliderBannerCard";
 import Slider from "react-slick";
@@ -7,11 +7,23 @@ import "slick-carousel/slick/slick-theme.css";
 import { DoubleRightOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import style from "./Homepagestyle/SliderBanner.module.scss";
+
 const SliderBannerList = () => {
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const autoplay = setInterval(() => {
+      if (sliderRef.current) {
+        sliderRef.current.slickNext();
+      }
+    }, 3500);
+    return () => clearInterval(autoplay);
+  }, []);
+
   const sliderSettings = {
     dots: false,
     infinite: true,
-    speed: 250,
+    speed: 550,
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
@@ -47,6 +59,7 @@ const SliderBannerList = () => {
     ),
     nextArrow: <Button></Button>,
   };
+
   const sliderItems = SliderBannerData.map((data, index) => (
     <div key={index}>
       <div className={style.sliderbanner}>
@@ -58,7 +71,9 @@ const SliderBannerList = () => {
   return (
     <div className={style.sliderbannercard}>
       <div className={style.sliders}>
-        <Slider {...sliderSettings}>{sliderItems}</Slider>
+        <Slider ref={sliderRef} {...sliderSettings}>
+          {sliderItems}
+        </Slider>
       </div>
     </div>
   );

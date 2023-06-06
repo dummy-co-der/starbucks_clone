@@ -6,14 +6,45 @@ import CoffeeAtHome from "../../public/Curations/CoffeeAtHome.jpg";
 import ReadyToEat from "../../public/Curations/ReadytoEat.jpg";
 import Image from "next/image";
 import styles from "./Homepagestyle/Curation.module.scss";
-
+import { motion,useAnimation } from "framer-motion";
+import { useEffect } from "react";
 export const Curation = () => {
+  const containerVariants = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  };
+  
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 }
+  };
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start('visible');
+  }, []);
+
   return (
     <div class={styles.curations}>
       <div class={styles.curations_sub}>
         <h1 class={styles.curations__title}>Handcrafted Curations</h1>
-        <div class={styles.curations__items}>
-          <div class={styles.curations__items__item}>
+        <motion.div
+          className={styles.curations__items}
+          variants={containerVariants}
+          initial="hidden"
+          animate={controls}
+        >
+           <motion.div
+            className={styles.curations__items__item}
+            variants={itemVariants}
+          >
             <Image
               src={Bestseller}
               alt="bestseller"
@@ -22,8 +53,11 @@ export const Curation = () => {
               class={styles.curations__items__item__itemimg}
             />
             <h5 class={styles.curations__items__item__itemtitle}>Bestseller</h5>
-          </div>
-          <div class={styles.curations__items__item}>
+          </motion.div>
+          <motion.div
+            className={styles.curations__items__item}
+            variants={itemVariants}
+          >
             <Image
               src={Drinks}
               alt="Drinks"
@@ -32,8 +66,11 @@ export const Curation = () => {
               class={styles.curations__items__item__itemimg}
             />
             <h5 class={styles.curations__items__item__itemtitle}>Drinks</h5>
-          </div>
-          <div class={styles.curations__items__item}>
+          </motion.div>
+          <motion.div
+            className={styles.curations__items__item}
+            variants={itemVariants}
+          >
             <Image
               src={Food}
               alt="Food"
@@ -42,8 +79,11 @@ export const Curation = () => {
               class={styles.curations__items__item__itemimg}
             />
             <h5 class={styles.curations__items__item__itemtitle}>Food</h5>
-          </div>
-          <div class={styles.curations__items__item}>
+            </motion.div>
+            <motion.div
+            className={styles.curations__items__item}
+            variants={itemVariants}
+          >
             <Image
               src={Merchandise}
               alt="Merchandise"
@@ -54,8 +94,11 @@ export const Curation = () => {
             <h5 class={styles.curations__items__item__itemtitle}>
               Merchandise
             </h5>
-          </div>
-          <div class={styles.curations__items__item}>
+            </motion.div>
+            <motion.div
+            className={styles.curations__items__item}
+            variants={itemVariants}
+          >
             <Image
               src={CoffeeAtHome}
               alt="Coffee at Home"
@@ -66,8 +109,11 @@ export const Curation = () => {
             <h5 class={styles.curations__items__item__itemtitle}>
               Coffee At Home
             </h5>
-          </div>
-          <div class={styles.curations__items__item}>
+            </motion.div>
+            <motion.div
+            className={styles.curations__items__item}
+            variants={itemVariants}
+          >
             <Image
               src={ReadyToEat}
               alt="ready to eat"
@@ -78,9 +124,11 @@ export const Curation = () => {
             <h5 class={styles.curations__items__item__itemtitle}>
               Ready To Eat
             </h5>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
+        
+      
     </div>
   );
 };

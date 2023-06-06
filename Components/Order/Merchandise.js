@@ -7,7 +7,7 @@ import {
 } from "@/Components/slice/MerchandiseSlice";
 import { useDispatch, useSelector } from "react-redux";
 import ItemCard from "../Common/Itemcard/ItemCard";
-
+import { motion } from "framer-motion";
 const Merchandise = () => {
   const Merchandise = useSelector(GetMerchandiseData);
   const [selectedFilter, setSelectedFilter] = useState(null);
@@ -17,13 +17,24 @@ const Merchandise = () => {
     dispatch(Filtermerchandisedata(value));
     setSelectedFilter(value);
   }
+  const itemVariants = {
+    initial: { scale: 1 },
+    hover: { scale: 1.05 }
+  };
+  
   function Page() {
     return (
       <div className={style.drinkcardlist}>
         {Merchandise.map((data, index) => (
-          <div className={style.drinkcard}>
+          <motion.div
+          whileHover="hover"
+          className={style.drinkcard}
+          initial="initial"
+          key={index}
+          variants={itemVariants}
+        >
             <ItemCard data={data} border="50%" />
-          </div>
+            </motion.div>
         ))}
       </div>
     );

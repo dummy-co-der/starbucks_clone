@@ -35,10 +35,12 @@ export default function Navbar() {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-  const [setCart, setCartOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
   const cartRef = useRef(null);
-  function openCart() {
-    setCartOpen(!setCart);
+  const openCart=()=>{
+      if(cartOpen===false){
+      setCartOpen(!cartOpen);
+      }
   }
   useEffect(() => {
     function handleClickOutside(event) {
@@ -46,11 +48,12 @@ export default function Navbar() {
         setCartOpen(false);
       }
     }
-    document.addEventListener('mousedown', handleClickOutside);
+    
+    document.addEventListener('mousedown', handleClickOutside);    
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [cartOpen]);
 
   const cartData = useSelector(GetCartData);
   const itemsinCart = cartData.counters;
@@ -142,7 +145,7 @@ export default function Navbar() {
               <div className={styles.cartCircle}>{itemsinCart}</div>
               <div className={styles.cartIcon}>
                 <ShoppingCartOutlined
-                  onClick={() => openCart()}
+                  onClick={()=>openCart()}
                   style={{ fontSize: "34px", color: "#1e3933" }}
                 />
               </div>
@@ -176,11 +179,11 @@ export default function Navbar() {
           </div>
         </form>
       </Modal>
-      {setCart && (
+      {cartOpen && (
         <div ref={cartRef} className={styles.cartdrawer}>
           <div className={styles.headingcart}>
           <h3 style={{color:'#00754A'}}>{`Starbucks (${itemsinCart})`}</h3>
-          <button onClick={()=>setCartOpen(false)}className={styles.drawerclosebtn}>X</button>
+          <button onClick={()=>setCartOpen()}className={styles.drawerclosebtn}>X</button>
           </div>
           <Cartdataitems Data={Data} />
         </div>

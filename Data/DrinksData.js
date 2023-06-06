@@ -2,8 +2,8 @@ const drinksdata = [
   {
     image: "Drinksdata-images/product1.jpg",
     type: "black",
-    vegan: "no",
-    title: "Hazlenut Triange",
+    vegan: "yes",
+    title: "Hazlenut Conffee",
     serving: "PER SERVE(50 g) - 302 Kcal",
     description:
       "Rich in flavour, full-bodied espresso with hot water in true...",
@@ -12,8 +12,8 @@ const drinksdata = [
   {
     image: "Drinksdata-images/product2.jpg",
     type: "black",
-    vegan: "no",
-    title: "Bhuna Chicken Puff",
+    vegan: "yes",
+    title: "Cold Frappucino",
     serving: "PER SERVE(85 g) - 390 Kcal",
     description:
       "Rich in flavour, full-bodied espresso with hot water in true...",
@@ -32,7 +32,7 @@ const drinksdata = [
   {
     image: "Drinksdata-images/product4.jpg",
     type: "blended",
-    vegan: "no",
+    vegan: "yes",
     title: "Bhuna Chicken Puff",
     serving: "PER SERVE(85 g) - 390 Kcal",
     description:
@@ -52,8 +52,8 @@ const drinksdata = [
   {
     image: "Drinksdata-images/product6.jpg",
     type: "brew",
-    vegan: "no",
-    title: "Bhuna Chicken Puff",
+    vegan: "yes",
+    title: "Espresso",
     serving: "PER SERVE(85 g) - 390 Kcal",
     description:
       "Rich in flavour, full-bodied espresso with hot water in true...",
@@ -83,7 +83,7 @@ const drinksdata = [
     image: "Drinksdata-images/product9.jpg",
     vegan: "no",
     type: "cold",
-    title: "Bhuna Chicken Puff",
+    title: "Espresso Black",
     serving: "PER SERVE(85 g) - 390 Kcal",
     description:
       "Rich in flavour, full-bodied espresso with hot water in true...",
@@ -143,7 +143,7 @@ const drinksdata = [
     image: "Drinksdata-images/product15.jpg",
     type: "icecream",
     vegan: "no",
-    title: "Bhuna Chicken Puff",
+    title: "Frappucino",
     serving: "PER SERVE(85 g) - 390 Kcal",
     description:
       "Rich in flavour, full-bodied espresso with hot water in true...",
