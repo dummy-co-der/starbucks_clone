@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import SliderBannerData from "@/Data/SliderBannerData";
-import SliderbannerCard from "../Common/Sliderbanner/SliderBannerCard";
+import SliderbannerCard from "../Common/SliderBanner/SliderBannerCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
