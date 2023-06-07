@@ -48,7 +48,7 @@ function Banner() {
               }`}
               onClick={() => setActiveLink("featured")}
             >
-              FEATURED
+              Featured
             </div>
           </li>
           <li className={styles.tab_item2}>
@@ -59,7 +59,7 @@ function Banner() {
               }`}
               onClick={() => setActiveLink("anytime")}
             >
-              ANYTIME
+              Anytime
             </div>
           </li>
           <li className={styles.tab_item2}>
@@ -70,7 +70,7 @@ function Banner() {
               }`}
               onClick={() => setActiveLink("congratulations")}
             >
-              CONGRATULATIONS
+              Congratulations
             </div>
           </li>
           <li className={styles.tab_item3}>
@@ -81,7 +81,7 @@ function Banner() {
               }`}
               onClick={() => setActiveLink("thankyou")}
             >
-              THANK YOU
+              Thank You
             </div>
           </li>
         </ul>

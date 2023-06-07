@@ -13,7 +13,6 @@ const StoreLocation = () => {
         <div className={style.storesearch}>
           <Image src={logo} className={style.image} width={80} height={80} />
           <Input
-            placeholder="No Store Selected"
             bordered={false}
             style={{
               borderBottom: "2px solid #00754A",

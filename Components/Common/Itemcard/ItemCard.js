@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styles from "./ItemCard.module.scss";
-import { Button, Typography } from "antd";
+import { Button, Typography, notification } from "antd";
 import { addData, GetCartData } from "@/Components/slice/CartSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { notification } from "antd";
 import { CheckOutlined } from "@ant-design/icons";
 
 const ItemCard = ({ data, border }) => {
