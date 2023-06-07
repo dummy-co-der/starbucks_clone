@@ -3,7 +3,11 @@ import React from "react";
 import styles from "./profilepagestyle/Profile.module.scss";
 import { RightOutlined, SettingFilled, UserOutlined } from "@ant-design/icons";
 import Link from "next/link";
+
 const Profile = () => {
+  const handleButtonClick = () => {
+    window.location.href = "login";
+  };
   return (
     <div className={styles.profilediv}>
       <div className={styles.profile}>
@@ -17,7 +21,9 @@ const Profile = () => {
             <img src="/Profile-images/profileDP.svg" alt="profile" />
           </div>
           <h2>Welcome to Starbucks</h2>
-          <Button className={styles.buttonstyle}>Login or Signup</Button>
+          <Button className={styles.buttonstyle} onClick={handleButtonClick}>
+            Login or Signup
+          </Button>
         </div>
       </div>
       <div className={styles.help}>

@@ -37,18 +37,18 @@ export default function Navbar() {
   };
   const [cartOpen, setCartOpen] = useState(false);
   const cartRef = useRef(null);
-  const openCart=()=>{
-      if(cartOpen===false){
-      setCartOpen(!cartOpen);
-      }
-  }
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (cartRef.current && !cartRef.current.contains(event.target)) {
-        setCartOpen(false);
-      }
+
+  const openCart = () => {
+    setCartOpen((prevOpen) => !prevOpen);
+  };
+
+  const handleClickOutside = (event) => {
+    if (cartRef.current && !cartRef.current.contains(event.target)) {
+      setCartOpen(false);
     }
-    
+  };
+
+  useEffect(() => {    
     document.addEventListener('mousedown', handleClickOutside);    
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);

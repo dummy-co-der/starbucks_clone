@@ -1,10 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./GiftCard.module.scss";
-import { Button } from "antd";
+import { Button, notification } from "antd";
+import { addData, GetCartData } from "@/Components/slice/CartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { CheckOutlined } from "@ant-design/icons";
+import { motion } from "framer-motion";
 
-const GiftCard = ({ data }) => {
+const GiftCard = ({ data, border }) => {
+  const [open, setOpen] = useState(false);
+  const dispatch = useDispatch();
+  const openNotification = () => {
+    const placement = "bottomLeft";
+    notification.open({
+      message: "Item added to cart Successfully",
+      placement,
+      icon: <CheckOutlined />,
+      style: { backgroundColor: "#D0F5BE", color: "green" },
+      messageStyle: { color: "white" },
+      duration: 2,
+    });
+  };
+  function addtoCart(data) {
+    console.log(data);
+    setOpen(true);
+    dispatch(addData(data));
+    openNotification();
+  }
+  const datas = useSelector(GetCartData);
   return (
-    <div className={styles.card}>
+    <motion.div
+      className={styles.card}
+      initial="initial"
+      whileHover="hover"
+    >
       <div className={styles.cardsub}>
         <div className={styles.cardlayout}>
           <img
@@ -21,9 +49,12 @@ const GiftCard = ({ data }) => {
         </div>
       </div>
       <div className={styles.carddatasublayout}>
-        <Button className={styles.additembtn}> Add item </Button>
+      <h4>₹{data.price}</h4>
+        <Button onClick={() => addtoCart(data)} className={styles.additembtn}>
+          Add item
+        </Button>
       </div>
-    </div>
+      </motion.div>
   );
 };
 
