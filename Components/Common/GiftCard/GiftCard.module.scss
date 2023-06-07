@@ -1,13 +1,19 @@
 @import "/Components/Color.scss";
 
 .card {
-  background-color: $bg-color;
+  // background-color: $bg-color;
+  box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
   display: flex;
   align-items: center;
   flex-direction: column;
   border-radius: 12px;
-  margin: 10px;
-  width: 30%;
+  margin: 12px;
+  width: 31%;
+  &:hover {
+    box-shadow: 0 4px 8px #00000024, 0 8px 10px #0000001f, 0 1px 10px #0000003a,
+      0 16px 24px -16px rgba(0, 0, 0, 0.8);
+      transform: scale(1.05) translateZ(0px);
+  }
 }
 
 .cardsub {
@@ -56,8 +62,6 @@
   background-color: $secondary-color;
   color: white;
   border-radius: 15px;
-  left: 130px;
-  top: -25px;
 
   :hover {
     color: aliceblue !important;
